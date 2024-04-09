@@ -1,15 +1,28 @@
 ---
 layout: default
 ---
-<div class="relative py-24 md:py-28 bg-white overflow-hidden font-sans">
+<div class="relative py-24 md:py-32 bg-white overflow-hidden">
   <div class="relative px-4 sm:px-6 lg:px-8">
-    <div class="text-lg max-w-prose mx-auto mb-8">
-      <h1
-        class="font-misc mt-2 mb-4 text-4xl text-center-DIS leading-8 font-extrabold text-gray-800 md:text-4xl sm:leading-10">
+    <div class="text-lg flex flex-col mx-auto items-center max-w-prose mb-8">
+      <h1 class="mt-2 mb-4 text-4xl uppercase text-center-DIS leading-8 font-extrabold text-teal-600 md:text-4xl sm:leading-10">
         {{ page.title | escape }}</h1>
-        <div class="max-w-prose mx-auto mt-4 mb-6 soopr-btn soopr-btn-def" style="min-height: 36px;"></div>
+      <hr class="rounded w-8/12 gray-700 h-1 bg-gray-600">
     </div>
-    <div class="prose prose-lg text-gray-800 mx-auto">
+
+    <!-- Breadcrumbs -->
+    {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+    <div class="text-sm w-full md:w-2/3 mx-auto text-left items-start text-blue-700">
+      <a href="/">Home</a>
+      {% for crumb in crumbs offset: 1 %}
+        {% if forloop.last %}
+          / <span class="text-gray-700">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</span>
+        {% else %}
+          / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="pt-16 items-center text-center text-lg text-gray-800 mx-auto">
       {{ content }}
     </div>
   </div>
