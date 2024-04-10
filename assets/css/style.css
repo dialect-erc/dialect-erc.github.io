@@ -915,6 +915,10 @@ video {
   top: 0px;
 }.z-50 {
   z-index: 50;
+}.col-span-1 {
+  grid-column: span 1 / span 1;
+}.col-span-4 {
+  grid-column: span 4 / span 4;
 }.mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -938,6 +942,8 @@ video {
   margin-top: 0.5rem;
 }.ml-1 {
   margin-left: 0.25rem;
+}.mb-1 {
+  margin-bottom: 0.25rem;
 }.block {
   display: block;
 }.flex {
@@ -982,12 +988,18 @@ video {
   max-width: 65ch;
 }.flex-1 {
   flex: 1 1 0%;
+}.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}.cursor-pointer {
+  cursor: pointer;
 }.list-disc {
   list-style-type: disc;
 }.list-none {
   list-style-type: none;
 }.grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }.flex-col {
   flex-direction: column;
 }.flex-wrap {
@@ -1002,6 +1014,8 @@ video {
   justify-content: space-between;
 }.gap-8 {
   gap: 2rem;
+}.gap-4 {
+  gap: 1rem;
 }.space-x-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
@@ -1109,6 +1123,8 @@ video {
   text-align: left;
 }.text-center {
   text-align: center;
+}.text-start {
+  text-align: start;
 }.align-middle {
   vertical-align: middle;
 }.font-sans {
@@ -1137,6 +1153,9 @@ video {
 }.text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }.font-semibold {
   font-weight: 600;
 }.font-bold {
@@ -1149,6 +1168,8 @@ video {
   text-transform: uppercase;
 }.capitalize {
   text-transform: capitalize;
+}.italic {
+  font-style: italic;
 }.leading-none {
   line-height: 1;
 }.leading-relaxed {
@@ -1217,9 +1238,17 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }.duration-300 {
   transition-duration: 300ms;
-}.highlight .hll{background-color:#515151}.highlight{background:#2d2d2d;color:#f2f0ec}.highlight .c{color:#a3cacd}.highlight .err{color:#f2777a}.highlight .k{color:#c9c}.highlight .l{color:#f99157}.highlight .n{color:#f2f0ec}.highlight .o{color:#6cc}.highlight .p{color:#f2f0ec}.highlight .ch{color:#a3cacd}.highlight .cm{color:#a3cacd}.highlight .cp{color:#a3cacd}.highlight .cpf{color:#a3cacd}.highlight .c1{color:#a3cacd}.highlight .cs{color:#a3cacd}.highlight .gd{color:#f2777a}.highlight .ge{font-style:italic}.highlight .gh{color:#f2f0ec;font-weight:bold}.highlight .gi{color:#9c9}.highlight .gp{color:#a3cacd;font-weight:bold}.highlight .gs{font-weight:bold}.highlight .gu{color:#6cc;font-weight:bold}.highlight .kc{color:#c9c}.highlight .kd{color:#c9c}.highlight .kn{color:#6cc}.highlight .kp{color:#c9c}.highlight .kr{color:#c9c}.highlight .kt{color:#fc6}.highlight .ld{color:#9c9}.highlight .m{color:#f99157}.highlight .s{color:#9c9}.highlight .na{color:#69c}.highlight .nb{color:#f2f0ec}.highlight .nc{color:#fc6}.highlight .no{color:#f2777a}.highlight .nd{color:#6cc}.highlight .ni{color:#f2f0ec}.highlight .ne{color:#f2777a}.highlight .nf{color:#69c}.highlight .nl{color:#f2f0ec}.highlight .nn{color:#fc6}.highlight .nx{color:#69c}.highlight .py{color:#f2f0ec}.highlight .nt{color:#6cc}.highlight .nv{color:#f2777a}.highlight .ow{color:#6cc}.highlight .w{color:#f2f0ec}.highlight .mb{color:#f99157}.highlight .mf{color:#f99157}.highlight .mh{color:#f99157}.highlight .mi{color:#f99157}.highlight .mo{color:#f99157}.highlight .sa{color:#9c9}.highlight .sb{color:#9c9}.highlight .sc{color:#f2f0ec}.highlight .dl{color:#9c9}.highlight .sd{color:#a3cacd}.highlight .s2{color:#9c9}.highlight .se{color:#f99157}.highlight .sh{color:#9c9}.highlight .si{color:#f99157}.highlight .sx{color:#9c9}.highlight .sr{color:#9c9}.highlight .s1{color:#9c9}.highlight .ss{color:#9c9}.highlight .bp{color:#f2f0ec}.highlight .fm{color:#69c}.highlight .vc{color:#f2777a}.highlight .vg{color:#f2777a}.highlight .vi{color:#f2777a}.highlight .vm{color:#f2777a}.highlight .il{color:#f99157}.hover\:bg-gray-100:hover {
+}.highlight .hll{background-color:#515151}.highlight{background:#2d2d2d;color:#f2f0ec}.highlight .c{color:#a3cacd}.highlight .err{color:#f2777a}.highlight .k{color:#c9c}.highlight .l{color:#f99157}.highlight .n{color:#f2f0ec}.highlight .o{color:#6cc}.highlight .p{color:#f2f0ec}.highlight .ch{color:#a3cacd}.highlight .cm{color:#a3cacd}.highlight .cp{color:#a3cacd}.highlight .cpf{color:#a3cacd}.highlight .c1{color:#a3cacd}.highlight .cs{color:#a3cacd}.highlight .gd{color:#f2777a}.highlight .ge{font-style:italic}.highlight .gh{color:#f2f0ec;font-weight:bold}.highlight .gi{color:#9c9}.highlight .gp{color:#a3cacd;font-weight:bold}.highlight .gs{font-weight:bold}.highlight .gu{color:#6cc;font-weight:bold}.highlight .kc{color:#c9c}.highlight .kd{color:#c9c}.highlight .kn{color:#6cc}.highlight .kp{color:#c9c}.highlight .kr{color:#c9c}.highlight .kt{color:#fc6}.highlight .ld{color:#9c9}.highlight .m{color:#f99157}.highlight .s{color:#9c9}.highlight .na{color:#69c}.highlight .nb{color:#f2f0ec}.highlight .nc{color:#fc6}.highlight .no{color:#f2777a}.highlight .nd{color:#6cc}.highlight .ni{color:#f2f0ec}.highlight .ne{color:#f2777a}.highlight .nf{color:#69c}.highlight .nl{color:#f2f0ec}.highlight .nn{color:#fc6}.highlight .nx{color:#69c}.highlight .py{color:#f2f0ec}.highlight .nt{color:#6cc}.highlight .nv{color:#f2777a}.highlight .ow{color:#6cc}.highlight .w{color:#f2f0ec}.highlight .mb{color:#f99157}.highlight .mf{color:#f99157}.highlight .mh{color:#f99157}.highlight .mi{color:#f99157}.highlight .mo{color:#f99157}.highlight .sa{color:#9c9}.highlight .sb{color:#9c9}.highlight .sc{color:#f2f0ec}.highlight .dl{color:#9c9}.highlight .sd{color:#a3cacd}.highlight .s2{color:#9c9}.highlight .se{color:#f99157}.highlight .sh{color:#9c9}.highlight .si{color:#f99157}.highlight .sx{color:#9c9}.highlight .sr{color:#9c9}.highlight .s1{color:#9c9}.highlight .ss{color:#9c9}.highlight .bp{color:#f2f0ec}.highlight .fm{color:#69c}.highlight .vc{color:#f2777a}.highlight .vg{color:#f2777a}.highlight .vi{color:#f2777a}.highlight .vm{color:#f2777a}.highlight .il{color:#f99157}.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}.hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }.hover\:bg-transparent:hover {
