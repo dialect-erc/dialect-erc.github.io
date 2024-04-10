@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact Us
+title: Impressum
 ---
 
 Contact Us on abc@example.com
