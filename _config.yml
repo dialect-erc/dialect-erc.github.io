@@ -16,6 +16,11 @@ css_dir: "assets/css" # defaults to "css"
 
 highlighter: rouge
 
+scholar:
+  bibliography: papers.bib
+  bibliography_template: bib
+  style: ieee
+
 collections:
   posts:
     output: true

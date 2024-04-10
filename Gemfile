@@ -8,6 +8,7 @@ group :jekyll_plugins do
   gem "jekyll-soopr-seo-tag"
   gem "jekyll-minifier"
   gem 'jekyll-sitemap'
+  gem 'jekyll-scholar'
 end
 gem "rouge"
 

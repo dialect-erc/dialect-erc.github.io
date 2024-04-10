@@ -6,7 +6,7 @@ title: News
 Intro text
 
 <!-- This code inserts an overview of all the news posts -->
-<div class="container max-w-screen-lg py-8 md:py-8 mx-auto px-4 sm:px-6 lg:px-8">
+<div class="container max-w-screen-lg py-8 md:py-8 mx-auto">
   <ul class="grid grid-cols-1 md:grid-cols-2 gap-8">
     {%- for post in site.posts -%}
     <li class="list-none">
