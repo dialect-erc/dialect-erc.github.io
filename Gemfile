@@ -9,6 +9,7 @@ group :jekyll_plugins do
   gem "jekyll-minifier"
   gem 'jekyll-sitemap'
   gem 'jekyll-scholar'
+  gem 'jekyll-paginate'
 end
 gem "rouge"
 

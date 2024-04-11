@@ -11,7 +11,10 @@ plugins:
   - jekyll-soopr-seo-tag
   - jekyll-sitemap
   - jekyll-minifier
+  - jekyll-paginate
 
+
+paginate: 3
 css_dir: "assets/css" # defaults to "css"
 
 highlighter: rouge

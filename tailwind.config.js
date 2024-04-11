@@ -8,7 +8,8 @@ module.exports = {
       colors: {
         gray: colors.slate,
         primary: colors.blue,
-        secondary: colors.indigo,
+        links: colors.blue,
+        secondary: colors.teal,
         tertiary: colors.slate,
         danger: colors.red,
       },
