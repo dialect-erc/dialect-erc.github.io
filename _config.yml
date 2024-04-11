@@ -15,6 +15,7 @@ plugins:
 
 
 paginate: 3
+
 css_dir: "assets/css" # defaults to "css"
 
 highlighter: rouge
@@ -23,6 +24,8 @@ scholar:
   bibliography: papers.bib
   bibliography_template: bib
   style: ieee
+  sort_by: year,month
+  order: descending
 
 collections:
   posts:
