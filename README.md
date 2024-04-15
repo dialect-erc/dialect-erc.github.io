@@ -47,4 +47,4 @@ Copy the Bibtex reference of the publication and add the reference to _bibliogra
  - booktitle (or journal)
 
 ### Known Issues
- - Breadcrumbs only work for home. Deeper layers add a trailing / which does not seem to work on the live server
+\-
