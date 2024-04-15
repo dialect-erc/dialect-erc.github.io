@@ -1,4 +1,4 @@
-# Web Page for the DIALECT ERC Project
+# Webpage for the DIALECT ERC Project
 
 Link to webpage: https://dialect-erc.github.io/
 
