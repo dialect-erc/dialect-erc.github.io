@@ -1,9 +1,9 @@
 ---
 layout: page
 title: News
+permalink: /news/
 ---
 
-Intro text
 
 <!-- This code inserts an overview of all the news posts -->
 <div class="container max-w-screen-lg py-8 md:py-8 mx-auto">

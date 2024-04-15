@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Team
+permalink: /team/
 
 team:
     -   name: Barbara Plank

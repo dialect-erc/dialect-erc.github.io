@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Publications
+permalink: /publications/
 ---
 
 <!-- styling for bibliography is done in _layouts/bib.html -->

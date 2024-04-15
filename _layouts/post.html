@@ -12,17 +12,7 @@ layout: default
         class="mt-2 mb-2 text-3xl text-center-DIS leading-8 font-extrabold tracking-tight-DIS text-gray-800 sm:text-4xl sm:leading-10"
         itemprop="name headline">
         {{ page.title | escape }}</h1>
-        {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-        <div class="text-sm text-blue-700">
-          <a href="/">Home</a>
-          {% for crumb in crumbs offset: 1 %}
-            {% if forloop.last %}
-              / <span class="text-gray-700">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</span>
-            {% else %}
-              / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
-            {% endif %}
-          {% endfor %}
-        </div>
+        {% include breadcrumbs.html %}
     </div>
     <p class="max-w-prose mx-auto mb-2 text-lg uppercase text-gray-500"><span class="font-bold tracking-wide">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
