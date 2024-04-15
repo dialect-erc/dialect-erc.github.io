@@ -1,6 +1,22 @@
 ---
 ---
 
+@inproceedings{artemova-plank-2023-low,
+    title = "Low-resource Bilingual Dialect Lexicon Induction with Large Language Models",
+    author = "Artemova, Ekaterina  and
+      Plank, Barbara",
+    editor = {Alum{\"a}e, Tanel  and
+      Fishel, Mark},
+    booktitle = "Proceedings of the 24th Nordic Conference on Computational Linguistics (NoDaLiDa)",
+    month = may,
+    year = "2023",
+    address = "T{\'o}rshavn, Faroe Islands",
+    publisher = "University of Tartu Library",
+    url = "https://aclanthology.org/2023.nodalida-1.39",
+    pages = "371--385",
+    abstract = "Bilingual word lexicons map words in one language to their synonyms in another language. Numerous papers have explored bilingual lexicon induction (BLI) in high-resource scenarios, framing a typical pipeline that consists of two steps: (i) unsupervised bitext mining and (ii) unsupervised word alignment. At the core of those steps are pre-trained large language models (LLMs).In this paper we present the analysis of the BLI pipeline for German and two of its dialects, Bavarian and Alemannic. This setup poses a number of unique challenges, attributed to the scarceness of resources, relatedness of the languages and lack of standardization in the orthography of dialects. We analyze the BLI outputs with respect to word frequency and the pairwise edit distance. Finally, we release an evaluation dataset consisting of manual annotations for 1K bilingual word pairs labeled according to their semantic similarity.",
+}
+
 @inproceedings{blaschke-etal-2023-survey,
     title = "A Survey of Corpora for {G}ermanic Low-Resource Languages and Dialects",
     author = "Blaschke, Verena  and
@@ -18,58 +34,6 @@
     abstract = "Despite much progress in recent years, the vast majority of work in natural language processing (NLP) is on standard languages with many speakers. In this work, we instead focus on low-resource languages and in particular non-standardized low-resource languages. Even within branches of major language families, often considered well-researched, little is known about the extent and type of available resources and what the major NLP challenges are for these language varieties. The first step to address this situation is a systematic survey of available corpora (most importantly, annotated corpora, which are particularly valuable for NLP research). Focusing on Germanic low-resource language varieties, we provide such a survey in this paper. Except for geolocation (origin of speaker or document), we find that manually annotated linguistic resources are sparse and, if they exist, mostly cover morphosyntax. Despite this lack of resources, we observe that interest in this area is increasing: there is active development and a growing research community. To facilitate research, we make our overview of over 80 corpora publicly available.",
 }
 
-@inproceedings{artemova-plank-2023-low,
-    title = "Low-resource Bilingual Dialect Lexicon Induction with Large Language Models",
-    author = "Artemova, Ekaterina  and
-      Plank, Barbara",
-    editor = {Alum{\"a}e, Tanel  and
-      Fishel, Mark},
-    booktitle = "Proceedings of the 24th Nordic Conference on Computational Linguistics (NoDaLiDa)",
-    month = may,
-    year = "2023",
-    address = "T{\'o}rshavn, Faroe Islands",
-    publisher = "University of Tartu Library",
-    url = "https://aclanthology.org/2023.nodalida-1.39",
-    pages = "371--385",
-    abstract = "Bilingual word lexicons map words in one language to their synonyms in another language. Numerous papers have explored bilingual lexicon induction (BLI) in high-resource scenarios, framing a typical pipeline that consists of two steps: (i) unsupervised bitext mining and (ii) unsupervised word alignment. At the core of those steps are pre-trained large language models (LLMs).In this paper we present the analysis of the BLI pipeline for German and two of its dialects, Bavarian and Alemannic. This setup poses a number of unique challenges, attributed to the scarceness of resources, relatedness of the languages and lack of standardization in the orthography of dialects. We analyze the BLI outputs with respect to word frequency and the pairwise edit distance. Finally, we release an evaluation dataset consisting of manual annotations for 1K bilingual word pairs labeled according to their semantic similarity.",
-}
-
-@inproceedings{baan-etal-2022-stop,
-    title = "Stop Measuring Calibration When Humans Disagree",
-    author = "Baan, Joris  and
-      Aziz, Wilker  and
-      Plank, Barbara  and
-      Fernandez, Raquel",
-    editor = "Goldberg, Yoav  and
-      Kozareva, Zornitsa  and
-      Zhang, Yue",
-    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
-    month = dec,
-    year = "2022",
-    address = "Abu Dhabi, United Arab Emirates",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2022.emnlp-main.124",
-    doi = "10.18653/v1/2022.emnlp-main.124",
-    pages = "1892--1915",
-    abstract = "Calibration is a popular framework to evaluate whether a classifier knows when it does not know - i.e., its predictive probabilities are a good indication of how likely a prediction is to be correct. Correctness is commonly estimated against the human majority class. Recently, calibration to human majority has been measured on tasks where humans inherently disagree about which class applies. We show that measuring calibration to human majority given inherent disagreements is theoretically problematic, demonstrate this empirically on the ChaosNLI dataset, and derive several instance-level measures of calibration that capture key statistical properties of human judgements - including class frequency, ranking and entropy.",
-}
-
-@inproceedings{plank-2022-problem,
-    title = "The {``}Problem{''} of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
-    author = "Plank, Barbara",
-    editor = "Goldberg, Yoav  and
-      Kozareva, Zornitsa  and
-      Zhang, Yue",
-    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
-    month = dec,
-    year = "2022",
-    address = "Abu Dhabi, United Arab Emirates",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2022.emnlp-main.731",
-    doi = "10.18653/v1/2022.emnlp-main.731",
-    pages = "10671--10682",
-    abstract = "Human variation in labeling is often considered noise. Annotation projects for machine learning (ML) aim at minimizing human label variation, with the assumption to maximize data quality and in turn optimize and maximize machine learning metrics. However, thisconventional practice assumes that there exists a *ground truth*, and neglects that there exists genuine human variation in labeling due to disagreement, subjectivity in annotation or multiple plausible answers. In this position paper, we argue that this big open problem of \textit{human label variation} persists and critically needs more attention to move our field forward. This is because human label variation impacts all stages of the ML pipeline: *data, modeling and evaluation*. However, few works consider all of these dimensions jointly; and existing research is fragmented. We reconcile different previously proposed notions of human label variation, provide a repository of publicly-available datasets with un-aggregated labels, depict approaches proposed so far, identify gaps and suggest ways forward. As datasets are becoming increasingly available, we hope that this synthesized view on the {``}problem{''} will lead to an open discussion on possible strategies to devise fundamentally new directions.",
-}
 @inproceedings{sorensen-etal-2024-eevee,
     title = "{EEVEE}: An Easy Annotation Tool for Natural Language Processing",
     author = "Sorensen, Axel  and
@@ -86,6 +50,29 @@
     url = "https://aclanthology.org/2024.law-1.20",
     pages = "216--221",
     abstract = "Annotation tools are the starting point for creating Natural Language Processing (NLP) datasets. There is a wide variety of tools available; setting up these tools is however a hindrance. We propose Eevee, an annotation tool focused on simplicity, efficiency, and ease of use. It can run directly in the browser (no setup required) and uses tab-separated files (as opposed to character offsets or task-specific formats) for annotation. It allows for annotation of multiple tasks on a single dataset and supports four task-types: sequence labeling, span labeling, text classification and seq2seq.",
+}
+
+@inproceedings{gruber-etal-2024-labels,
+    title = "More Labels or Cases? Assessing Label Variation in Natural Language Inference",
+    author = {Gruber, Cornelia  and
+      Hechinger, Katharina  and
+      Assenmacher, Matthias  and
+      Kauermann, G{\"o}ran  and
+      Plank, Barbara},
+    editor = "Pyatkin, Valentina  and
+      Fried, Daniel  and
+      Stengel-Eskin, Elias  and
+      Stengel-Eskin, Elias  and
+      Liu, Alisa  and
+      Pezzelle, Sandro",
+    booktitle = "Proceedings of the Third Workshop on Understanding Implicit and Underspecified Language",
+    month = mar,
+    year = "2024",
+    address = "Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.unimplicit-1.2",
+    pages = "22--32",
+    abstract = "In this work, we analyze the uncertainty that is inherently present in the labels used for supervised machine learning in natural language inference (NLI). In cases where multiple annotations per instance are available, neither the majority vote nor the frequency of individual class votes is a trustworthy representation of the labeling uncertainty. We propose modeling the votes via a Bayesian mixture model to recover the data-generating process, i.e., the {``}true{''} latent classes, and thus gain insight into the class variations. This will enable a better understanding of the confusion happening during the annotation process. We also assess the stability of the proposed estimation procedure by systematically varying the numbers of i) instances and ii) labels. Thereby, we observe that few instances with many labels can predict the latent class borders reasonably well, while the estimation fails for many instances with only a few labels. This leads us to conclude that multiple labels are a crucial building block for properly analyzing label uncertainty.",
 }
 
 @inproceedings{muller-eberstein-etal-2023-subspace,
@@ -108,19 +95,551 @@
     abstract = "Representational spaces learned via language modeling are fundamental to Natural Language Processing (NLP), however there has been limited understanding regarding how and when during training various types of linguistic information emerge and interact. Leveraging a novel information theoretic probing suite, which enables direct comparisons of not just task performance, but their representational subspaces, we analyze nine tasks covering syntax, semantics and reasoning, across 2M pre-training steps and five seeds. We identify critical learning phases across tasks and time, during which subspaces emerge, share information, and later disentangle to specialize. Across these phases, syntactic knowledge is acquired rapidly after 0.5{\%} of full training. Continued performance improvements primarily stem from the acquisition of open-domain knowledge, while semantics and reasoning tasks benefit from later boosts to long-range contextualization and higher specialization. Measuring cross-task similarity further reveals that linguistically related tasks share information throughout training, and do so more during the critical phase of learning than before or after. Our findings have implications for model interpretability, multi-task learning, and learning from limited data.",
 }
 
-@inproceedings{DBLP:conf/konvens/Plank16,
-  author       = {Barbara Plank},
-  editor       = {Stefanie Dipper and
-                  Friedrich Neubarth and
-                  Heike Zinsmeister},
-  title        = {What to do about non-standard (or non-canonical) language in {NLP}},
-  booktitle    = {Proceedings of the 13th Conference on Natural Language Processing,
-                  {KONVENS}},
-  series       = {Bochumer Linguistische Arbeitsberichte},
-  volume       = {16},
-  year         = {2016},
-  url          = {https://www.linguistics.rub.de/konvens16/pub/2\_konvensproc.pdf},
-  timestamp    = {Thu, 12 Mar 2020 11:30:43 +0100},
-  biburl       = {https://dblp.org/rec/conf/konvens/Plank16.bib},
-  bibsource    = {dblp computer science bibliography, https://dblp.org}
+
+@inproceedings{giulianelli-etal-2023-comes,
+    title = "What Comes Next? Evaluating Uncertainty in Neural Text Generators Against Human Production Variability",
+    author = "Giulianelli, Mario  and
+      Baan, Joris  and
+      Aziz, Wilker  and
+      Fern{\'a}ndez, Raquel  and
+      Plank, Barbara",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.887",
+    doi = "10.18653/v1/2023.emnlp-main.887",
+    pages = "14349--14371",
+    abstract = "In Natural Language Generation (NLG) tasks, for any input, multiple communicative goals are plausible, and any goal can be put into words, or produced, in multiple ways. We characterise the extent to which human production varies lexically, syntactically, and semantically across four NLG tasks, connecting human production variability to aleatoric or data uncertainty. We then inspect the space of output strings shaped by a generation system{'}s predicted probability distribution and decoding algorithm to probe its uncertainty. For each test input, we measure the generator{'}s calibration to human production variability. Following this instance-level approach, we analyse NLG models and decoding strategies, demonstrating that probing a generator with multiple samples and, when possible, multiple references, provides the level of detail necessary to gain understanding of a model{'}s representation of uncertainty.",
+}
+
+@inproceedings{nguyen-etal-2024-rethinking,
+    title = "Rethinking Skill Extraction in the Job Market Domain using Large Language Models",
+    author = "Nguyen, Khanh  and
+      Zhang, Mike  and
+      Montariol, Syrielle  and
+      Bosselut, Antoine",
+    editor = "Hruschka, Estevam  and
+      Lake, Thom  and
+      Otani, Naoki  and
+      Mitchell, Tom",
+    booktitle = "Proceedings of the First Workshop on Natural Language Processing for Human Resources (NLP4HR 2024)",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.nlp4hr-1.3",
+    pages = "27--42",
+    abstract = "Skill Extraction involves identifying skills and qualifications mentioned in documents such as job postings and resumes. The task is commonly tackled by training supervised models using a sequence labeling approach with BIO tags. However, the reliance on manually annotated data limits the generalizability of such approaches. Moreover, the common BIO setting limits the ability of the models to capture complex skill patterns and handle ambiguous mentions. In this paper, we explore the use of in-context learning to overcome these challenges, on a benchmark of 6 uniformized skill extraction datasets. Our approach leverages the few-shot learning capabilities of large language models (LLMs) to identify and extract skills from sentences. We show that LLMs, despite not being on par with traditional supervised models in terms of performance, can better handle syntactically complex skill mentions in skill extraction tasks.",
+}
+
+@inproceedings{senger-etal-2024-deep,
+    title = "Deep Learning-based Computational Job Market Analysis: A Survey on Skill Extraction and Classification from Job Postings",
+    author = "Senger, Elena  and
+      Zhang, Mike  and
+      Goot, Rob  and
+      Plank, Barbara",
+    editor = "Hruschka, Estevam  and
+      Lake, Thom  and
+      Otani, Naoki  and
+      Mitchell, Tom",
+    booktitle = "Proceedings of the First Workshop on Natural Language Processing for Human Resources (NLP4HR 2024)",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.nlp4hr-1.1",
+    pages = "1--15",
+    abstract = "Recent years have brought significant advances to Natural Language Processing (NLP), which enabled fast progress in the field of computational job market analysis. Core tasks in this application domain are skill extraction and classification from job postings. Because of its quick growth and its interdisciplinary nature, there is no exhaustive assessment of this field. This survey aims to fill this gap by providing a comprehensive overview of deep learning methodologies, datasets, and terminologies specific to NLP-driven skill extraction. Our comprehensive cataloging of publicly available datasets addresses the lack of consolidated information on dataset creation and characteristics. Finally, the focus on terminology addresses the current lack of consistent definitions for important concepts, such as hard and soft skills, and terms relating to skill extraction and classification.",
+}
+
+@inproceedings{wang-plank-2023-actor,
+    title = "{ACTOR}: Active Learning with Annotator-specific Classification Heads to Embrace Human Label Variation",
+    author = "Wang, Xinpeng  and
+      Plank, Barbara",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.126",
+    doi = "10.18653/v1/2023.emnlp-main.126",
+    pages = "2046--2052",
+    abstract = "Label aggregation such as majority voting is commonly used to resolve annotator disagreement in dataset creation. However, this may disregard minority values and opinions. Recent studies indicate that learning from individual annotations outperforms learning from aggregated labels, though they require a considerable amount of annotation. Active learning, as an annotation cost-saving strategy, has not been fully explored in the context of learning from disagreement. We show that in the active learning setting, a multi-head model performs significantly better than a single-head model in terms of uncertainty estimation. By designing and evaluating acquisition functions with annotator-specific heads on two datasets, we show that group-level entropy works generally well on both datasets. Importantly, it achieves performance in terms of both prediction and uncertainty estimation comparable to full-scale training from disagreement, while saving 70{\%} of the annotation budget.",
+}
+
+@inproceedings{peng-etal-2024-different,
+    title = "Different Tastes of Entities: Investigating Human Label Variation in Named Entity Annotations",
+    author = "Peng, Siyao  and
+      Sun, Zihang  and
+      Loftus, Sebastian  and
+      Plank, Barbara",
+    editor = "Pyatkin, Valentina  and
+      Fried, Daniel  and
+      Stengel-Eskin, Elias  and
+      Stengel-Eskin, Elias  and
+      Liu, Alisa  and
+      Pezzelle, Sandro",
+    booktitle = "Proceedings of the Third Workshop on Understanding Implicit and Underspecified Language",
+    month = mar,
+    year = "2024",
+    address = "Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.unimplicit-1.7",
+    pages = "73--81",
+    abstract = "Named Entity Recognition (NER) is a key information extraction task with a long-standing tradition. While recent studies address and aim to correct annotation errors via re-labeling efforts, little is known about the sources of label variation, such as text ambiguity, annotation error, or guideline divergence. This is especially the case for high-quality datasets and beyond English CoNLL03. This paper studies disagreements in expert-annotated named entity datasets for three varieties: English, Danish, and DialectX. We show that text ambiguity and artificial guideline changes are dominant factors for diverse annotations among high-quality revisions. We survey student annotations on a subset of difficult entities and substantiate the feasibility and necessity of manifold annotations for understanding named entity ambiguities from a distributional perspective.",
+}
+
+@inproceedings{litschko-etal-2023-boosting,
+    title = "Boosting Zero-shot Cross-lingual Retrieval by Training on Artificially Code-Switched Data",
+    author = "Litschko, Robert  and
+      Artemova, Ekaterina  and
+      Plank, Barbara",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.193",
+    doi = "10.18653/v1/2023.findings-acl.193",
+    pages = "3096--3108",
+    abstract = "Transferring information retrieval (IR) models from a high-resource language (typically English) to other languages in a zero-shot fashion has become a widely adopted approach. In this work, we show that the effectiveness of zero-shot rankers diminishes when queries and documents are present in different languages. Motivated by this, we propose to train ranking models on artificially code-switched data instead, which we generate by utilizing bilingual lexicons. To this end, we experiment with lexicons induced from (1) cross-lingual word embeddings and (2) parallel Wikipedia page titles. We use the mMARCO dataset to extensively evaluate reranking models on 36 language pairs spanning Monolingual IR (MoIR), Cross-lingual IR (CLIR), and Multilingual IR (MLIR). Our results show that code-switching can yield consistent and substantial gains of 5.1 MRR@10 in CLIR and 3.9 MRR@10 in MLIR, while maintaining stable performance in MoIR. Encouragingly, the gains are especially pronounced for distant languages (up to 2x absolute gain). We further show that our approach is robust towards the ratio of code-switched tokens and also extends to unseen languages. Our results demonstrate that training on code-switched data is a cheap and effective way of generalizing zero-shot rankers for cross-lingual and multilingual retrieval.",
+}
+
+@inproceedings{bassignana-etal-2023-multi,
+    title = "Multi-{C}ross{RE} A Multi-Lingual Multi-Domain Dataset for Relation Extraction",
+    author = "Bassignana, Elisa  and
+      Ginter, Filip  and
+      Pyysalo, Sampo  and
+      van der Goot, Rob  and
+      Plank, Barbara",
+    editor = {Alum{\"a}e, Tanel  and
+      Fishel, Mark},
+    booktitle = "Proceedings of the 24th Nordic Conference on Computational Linguistics (NoDaLiDa)",
+    month = may,
+    year = "2023",
+    address = "T{\'o}rshavn, Faroe Islands",
+    publisher = "University of Tartu Library",
+    url = "https://aclanthology.org/2023.nodalida-1.9",
+    pages = "80--85",
+    abstract = "Most research in Relation Extraction (RE) involves the English language, mainly due to the lack of multi-lingual resources. We propose Multi-CrossRE, the broadest multi-lingual dataset for RE, including 26 languages in addition to English, and covering six text domains. Multi-CrossRE is a machine translated version of CrossRE (Bassignana and Plank, 2022), with a sub-portion including more than 200 sentences in seven diverse languages checked by native speakers. We run a baseline model over the 26 new datasets and{--}as sanity check{--}over the 26 back-translations to English. Results on the back-translated data are consistent with the ones on the original English CrossRE, indicating high quality of the translation and the resulting dataset.",
+}
+
+@inproceedings{blaschke-etal-2023-manipulating,
+    title = "Does Manipulating Tokenization Aid Cross-Lingual Transfer? A Study on {POS} Tagging for Non-Standardized Languages",
+    author = {Blaschke, Verena  and
+      Sch{\"u}tze, Hinrich  and
+      Plank, Barbara},
+    editor = {Scherrer, Yves  and
+      Jauhiainen, Tommi  and
+      Ljube{\v{s}}i{\'c}, Nikola  and
+      Nakov, Preslav  and
+      Tiedemann, J{\"o}rg  and
+      Zampieri, Marcos},
+    booktitle = "Tenth Workshop on NLP for Similar Languages, Varieties and Dialects (VarDial 2023)",
+    month = may,
+    year = "2023",
+    address = "Dubrovnik, Croatia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.vardial-1.5",
+    doi = "10.18653/v1/2023.vardial-1.5",
+    pages = "40--54",
+    abstract = "One of the challenges with finetuning pretrained language models (PLMs) is that their tokenizer is optimized for the language(s) it was pretrained on, but brittle when it comes to previously unseen variations in the data. This can for instance be observed when finetuning PLMs on one language and evaluating them on data in a closely related language variety with no standardized orthography. Despite the high linguistic similarity, tokenization no longer corresponds to meaningful representations of the target data, leading to low performance in, e.g., part-of-speech tagging. In this work, we finetune PLMs on seven languages from three different families and analyze their zero-shot performance on closely related, non-standardized varieties. We consider different measures for the divergence in the tokenization of the source and target data, and the way they can be adjusted by manipulating the tokenization during the finetuning step. Overall, we find that the similarity between the percentage of words that get split into subwords in the source and target data (the split word ratio difference) is the strongest predictor for model performance on target data.",
+}
+
+@inproceedings{zhang-etal-2024-entity,
+    title = "Entity Linking in the Job Market Domain",
+    author = "Zhang, Mike  and
+      Goot, Rob  and
+      Plank, Barbara",
+    editor = "Graham, Yvette  and
+      Purver, Matthew",
+    booktitle = "Findings of the Association for Computational Linguistics: EACL 2024",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-eacl.28",
+    pages = "410--419",
+    abstract = "In Natural Language Processing, entity linking (EL) has centered around Wikipedia, but yet remains underexplored for the job market domain. Disambiguating skill mentions can help us get insight into the current labor market demands. In this work, we are the first to explore EL in this domain, specifically targeting the linkage of occupational skills to the ESCO taxonomy (le Vrang et al., 2014). Previous efforts linked coarse-grained (full) sentences to a corresponding ESCO skill. In this work, we link more fine-grained span-level mentions of skills. We tune two high-performing neural EL models, a bi-encoder (Wu et al., 2020) and an autoregressive model (Cao et al., 2021), on a synthetically generated mention{--}skill pair dataset and evaluate them on a human-annotated skill-linking benchmark. Our findings reveal that both models are capable of linking implicit mentions of skills to their correct taxonomy counterparts. Empirically, BLINK outperforms GENRE in strict evaluation, but GENRE performs better in loose evaluation (accuracy@k).",
+}
+
+@inproceedings{litschko-etal-2023-establishing,
+    title = "Establishing Trustworthiness: Rethinking Tasks and Model Evaluation",
+    author = {Litschko, Robert  and
+      M{\"u}ller-Eberstein, Max  and
+      van der Goot, Rob  and
+      Weber-Genzel, Leon  and
+      Plank, Barbara},
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.14",
+    doi = "10.18653/v1/2023.emnlp-main.14",
+    pages = "193--203",
+    abstract = "Language understanding is a multi-faceted cognitive capability, which the Natural Language Processing (NLP) community has striven to model computationally for decades. Traditionally, facets of linguistic intelligence have been compartmentalized into tasks with specialized model architectures and corresponding evaluation protocols. With the advent of large language models (LLMs) the community has witnessed a dramatic shift towards general purpose, task-agnostic approaches powered by generative models. As a consequence, the traditional compartmentalized notion of language tasks is breaking down, followed by an increasing challenge for evaluation and analysis. At the same time, LLMs are being deployed in more real-world scenarios, including previously unforeseen zero-shot setups, increasing the need for trustworthy and reliable systems. Therefore, we argue that it is time to rethink what constitutes tasks and model evaluation in NLP, and pursue a more holistic view on language, placing trustworthiness at the center. Towards this goal, we review existing compartmentalized approaches for understanding the origins of a model{'}s functional capacity, and provide recommendations for more multi-faceted evaluation protocols.",
+}
+
+@inproceedings{ulmer-etal-2022-experimental,
+    title = "Experimental Standards for Deep Learning in Natural Language Processing Research",
+    author = {Ulmer, Dennis  and
+      Bassignana, Elisa  and
+      M{\"u}ller-Eberstein, Max  and
+      Varab, Daniel  and
+      Zhang, Mike  and
+      van der Goot, Rob  and
+      Hardmeier, Christian  and
+      Plank, Barbara},
+    editor = "Goldberg, Yoav  and
+      Kozareva, Zornitsa  and
+      Zhang, Yue",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2022",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-emnlp.196",
+    doi = "10.18653/v1/2022.findings-emnlp.196",
+    pages = "2673--2692",
+    abstract = "The field of Deep Learning (DL) has undergone explosive growth during the last decade, with a substantial impact on Natural Language Processing (NLP) as well. Yet, compared to more established disciplines, a lack of common experimental standards remains an open challenge to the field at large. Starting from fundamental scientific principles, we distill ongoing discussions on experimental standards in NLP into a single, widely-applicable methodology. Following these best practices is crucial to strengthen experimental evidence, improve reproducibility and enable scientific progress. These standards are further collected in a public repository to help them transparently adapt to future needs.",
+}
+
+@inproceedings{muller-eberstein-etal-2022-spectral,
+    title = "Spectral Probing",
+    author = {M{\"u}ller-Eberstein, Max  and
+      van der Goot, Rob  and
+      Plank, Barbara},
+    editor = "Goldberg, Yoav  and
+      Kozareva, Zornitsa  and
+      Zhang, Yue",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.527",
+    doi = "10.18653/v1/2022.emnlp-main.527",
+    pages = "7730--7741",
+    abstract = "Linguistic information is encoded at varying timescales (subwords, phrases, etc.) and communicative levels, such as syntax and semantics. Contextualized embeddings have analogously been found to capture these phenomena at distinctive layers and frequencies. Leveraging these findings, we develop a fully learnable frequency filter to identify spectral profiles for any given task. It enables vastly more granular analyses than prior handcrafted filters, and improves on efficiency. After demonstrating the informativeness of spectral probing over manual filters in a monolingual setting, we investigate its multilingual characteristics across seven diverse NLP tasks in six languages. Our analyses identify distinctive spectral profiles which quantify cross-task similarity in a linguistically intuitive manner, while remaining consistent across languages{---}highlighting their potential as robust, lightweight task descriptors.",
+}
+
+@inproceedings{aepli-etal-2023-findings,
+    title = "Findings of the {V}ar{D}ial Evaluation Campaign 2023",
+    author = {Aepli, No{\"e}mi  and
+      {\c{C}}{\"o}ltekin, {\c{C}}a{\u{g}}r{\i}  and
+      Van Der Goot, Rob  and
+      Jauhiainen, Tommi  and
+      Kazzaz, Mourhaf  and
+      Ljube{\v{s}}i{\'c}, Nikola  and
+      North, Kai  and
+      Plank, Barbara  and
+      Scherrer, Yves  and
+      Zampieri, Marcos},
+    editor = {Scherrer, Yves  and
+      Jauhiainen, Tommi  and
+      Ljube{\v{s}}i{\'c}, Nikola  and
+      Nakov, Preslav  and
+      Tiedemann, J{\"o}rg  and
+      Zampieri, Marcos},
+    booktitle = "Tenth Workshop on NLP for Similar Languages, Varieties and Dialects (VarDial 2023)",
+    month = may,
+    year = "2023",
+    address = "Dubrovnik, Croatia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.vardial-1.25",
+    doi = "10.18653/v1/2023.vardial-1.25",
+    pages = "251--261",
+    abstract = "This report presents the results of the shared tasks organized as part of the VarDial Evaluation Campaign 2023. The campaign is part of the tenth workshop on Natural Language Processing (NLP) for Similar Languages, Varieties and Dialects (VarDial), co-located with EACL 2023. Three separate shared tasks were included this year: Slot and intent detection for low-resource language varieties (SID4LR), Discriminating Between Similar Languages {--} True Labels (DSL-TL), and Discriminating Between Similar Languages {--} Speech (DSL-S). All three tasks were organized for the first time this year.",
+}
+
+@inproceedings{baan-etal-2024-interpreting,
+    title = "Interpreting Predictive Probabilities: Model Confidence or Human Label Variation?",
+    author = "Baan, Joris  and
+      Fern{\'a}ndez, Raquel  and
+      Plank, Barbara  and
+      Aziz, Wilker",
+    editor = "Graham, Yvette  and
+      Purver, Matthew",
+    booktitle = "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.eacl-short.24",
+    pages = "268--277",
+    abstract = "With the rise of increasingly powerful and user-facing NLP systems, there is growing interest in assessing whether they have a good {\_}representation of uncertainty{\_} by evaluating the quality of their predictive distribution over outcomes. We identify two main perspectives that drive starkly different evaluation protocols. The first treats predictive probability as an indication of model confidence; the second as an indication of human label variation. We discuss their merits and limitations, and take the position that both are crucial for trustworthy and fair NLP systems, but that exploiting a single predictive distribution is limiting. We recommend tools and highlight exciting directions towards models with disentangled representations of uncertainty about predictions and uncertainty about human labels.",
+}
+
+@inproceedings{leonardelli-etal-2023-semeval,
+    title = "{S}em{E}val-2023 Task 11: Learning with Disagreements ({L}e{W}i{D}i)",
+    author = "Leonardelli, Elisa  and
+      Abercrombie, Gavin  and
+      Almanea, Dina  and
+      Basile, Valerio  and
+      Fornaciari, Tommaso  and
+      Plank, Barbara  and
+      Rieser, Verena  and
+      Uma, Alexandra  and
+      Poesio, Massimo",
+    editor = {Ojha, Atul Kr.  and
+      Do{\u{g}}ru{\"o}z, A. Seza  and
+      Da San Martino, Giovanni  and
+      Tayyar Madabushi, Harish  and
+      Kumar, Ritesh  and
+      Sartori, Elisa},
+    booktitle = "Proceedings of the 17th International Workshop on Semantic Evaluation (SemEval-2023)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.semeval-1.314",
+    doi = "10.18653/v1/2023.semeval-1.314",
+    pages = "2304--2318",
+    abstract = "NLP datasets annotated with human judgments are rife with disagreements between the judges. This is especially true for tasks depending on subjective judgments such as sentiment analysis or offensive language detection. Particularly in these latter cases, the NLP community has come to realize that the common approach of reconciling{'} these different subjective interpretations risks misrepresenting the evidence. Many NLP researchers have therefore concluded that rather than eliminating disagreements from annotated corpora, we should preserve themindeed, some argue that corpora should aim to preserve all interpretations produced by annotators. But this approach to corpus creation for NLP has not yet been widely accepted. The objective of the Le-Wi-Di series of shared tasks is to promote this approach to developing NLP models by providing a unified framework for training and evaluating with such datasets. We report on the second such shared task, which differs from the first edition in three crucial respects: (i) it focuses entirely on NLP, instead of both NLP and computer vision tasks in its first edition; (ii) it focuses on subjective tasks, instead of covering different types of disagreements as training with aggregated labels for subjective NLP tasks is in effect a misrepresentation of the data; and (iii) for the evaluation, we concentrated on soft approaches to evaluation. This second edition of Le-Wi-Di attracted a wide array of partici- pants resulting in 13 shared task submission papers.",
+}
+
+@inproceedings{weber-plank-2023-activeaed,
+    title = "{A}ctive{AED}: A Human in the Loop Improves Annotation Error Detection",
+    author = "Weber, Leon  and
+      Plank, Barbara",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.562",
+    doi = "10.18653/v1/2023.findings-acl.562",
+    pages = "8834--8845",
+    abstract = "Manually annotated datasets are crucial for training and evaluating Natural Language Processing models. However, recent work has discovered that even widely-used benchmark datasets contain a substantial number of erroneous annotations. This problem has been addressed with Annotation Error Detection (AED) models, which can flag such errors for human re-annotation. However, even though many of these AED methods assume a final curation step in which a human annotator decides whether the annotation is erroneous, they have been developed as static models without any human-in-the-loop component. In this work, we propose ActiveAED, an AED method that can detect errors more accurately by repeatedly querying a human for error corrections in its prediction loop. We evaluate ActiveAED on eight datasets spanning five different tasks and find that it leads to improvements over the state of the art on seven of them, with gains of up to six percentage points in average precision.",
+}
+
+@inproceedings{bassignana-etal-2023-silver,
+    title = "Silver Syntax Pre-training for Cross-Domain Relation Extraction",
+    author = "Bassignana, Elisa  and
+      Ginter, Filip  and
+      Pyysalo, Sampo  and
+      van der Goot, Rob  and
+      Plank, Barbara",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.436",
+    doi = "10.18653/v1/2023.findings-acl.436",
+    pages = "6984--6993",
+    abstract = "Relation Extraction (RE) remains a challenging task, especially when considering realistic out-of-domain evaluations. One of the main reasons for this is the limited training size of current RE datasets: obtaining high-quality (manually annotated) data is extremely expensive and cannot realistically be repeated for each new domain. An intermediate training step on data from related tasks has shown to be beneficial across many NLP tasks. However, this setup still requires supplementary annotated data, which is often not available. In this paper, we investigate intermediate pre-training specifically for RE. We exploit the affinity between syntactic structure and semantic RE, and identify the syntactic relations which are closely related to RE by being on the shortest dependency path between two entities. We then take advantage of the high accuracy of current syntactic parsers in order to automatically obtain large amounts of low-cost pre-training data. By pre-training our RE model on the relevant syntactic relations, we are able to outperform the baseline in five out of six cross-domain setups, without any additional annotated data.",
+}
+
+@inproceedings{artemova-etal-2024-exploring,
+    title = "Exploring the Robustness of Task-oriented Dialogue Systems for Colloquial {G}erman Varieties",
+    author = "Artemova, Ekaterina  and
+      Blaschke, Verena  and
+      Plank, Barbara",
+    editor = "Graham, Yvette  and
+      Purver, Matthew",
+    booktitle = "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.eacl-long.28",
+    pages = "445--468",
+    abstract = "Mainstream cross-lingual task-oriented dialogue (ToD) systems leverage the transfer learning paradigm by training a joint model for intent recognition and slot-filling in English and applying it, zero-shot, to other languages.We address a gap in prior research, which often overlooked the transfer to lower-resource colloquial varieties due to limited test data.Inspired by prior work on English varieties, we craft and manually evaluate perturbation rules that transform German sentences into colloquial forms and use them to synthesize test sets in four ToD datasets.Our perturbation rules cover 18 distinct language phenomena, enabling us to explore the impact of each perturbation on slot and intent performance.Using these new datasets, we conduct an experimental evaluation across six different transformers.Here, we demonstrate that when applied to colloquial varieties, ToD systems maintain their intent recognition performance, losing 6{\%} (4.62 percentage points) in accuracy on average. However, they exhibit a significant drop in slot detection, with a decrease of 31{\%} (21 percentage points) in slot F$_1$ score.Our findings are further supported by a transfer experiment from Standard American English to synthetic Urban African American Vernacular English.",
+}
+
+@inproceedings{weber-etal-2024-donkii,
+    title = "Donkii: Characterizing and Detecting Errors in Instruction-Tuning Datasets",
+    author = "Weber, Leon  and
+      Litschko, Robert  and
+      Artemova, Ekaterina  and
+      Plank, Barbara",
+    editor = "Henning, Sophie  and
+      Stede, Manfred",
+    booktitle = "Proceedings of The 18th Linguistic Annotation Workshop (LAW-XVIII)",
+    month = mar,
+    year = "2024",
+    address = "St. Julians, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.law-1.19",
+    pages = "197--215",
+    abstract = "Instruction tuning has become an integral part of training pipelines for Large Language Models (LLMs) and has been shown to yield strong performance gains. In an orthogonal line of research, Annotation Error Detection (AED) has emerged as a tool for detecting quality problems in gold standard labels. So far, however, the application of AED methods has been limited to classification tasks. It is an open question how well AED methods generalize to language generation settings, which are becoming more widespread via LLMs. In this paper, we present a first and novel benchmark for AED on instruction tuning data: Donkii.It comprises three instruction-tuning datasets enriched with error annotations by experts and semi-automatic methods. We also provide a novel taxonomy of error types for instruction-tuning data.We find that all three datasets contain clear errors, which sometimes propagate directly into instruction-tuned LLMs. We propose four AED baselines for the generative setting and evaluate them extensively on the newly introduced dataset. Our results show that the choice of the right AED method and model size is indeed crucial and derive practical recommendations for how to use AED methods to clean instruction-tuning data.",
+}
+
+@inproceedings{xu-etal-2023-dissonance,
+    title = "From Dissonance to Insights: Dissecting Disagreements in Rationale Construction for Case Outcome Classification",
+    author = "Xu, Shanshan  and
+      T.y.s.s, Santosh  and
+      Ichim, Oana  and
+      Risini, Isabella  and
+      Plank, Barbara  and
+      Grabmair, Matthias",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.594",
+    doi = "10.18653/v1/2023.emnlp-main.594",
+    pages = "9558--9576",
+    abstract = "In legal NLP, Case Outcome Classification (COC) must not only be accurate but also trustworthy and explainable. Existing work in explainable COC has been limited to annotations by a single expert. However, it is well-known that lawyers may disagree in their assessment of case facts. We hence collect a novel dataset RaVE: Rationale Variation in ECHR, which is obtained from two experts in the domain of international human rights law, for whom we observe weak agreement. We study their disagreements and build a two-level task-independent taxonomy, supplemented with COC-specific subcategories. To our knowledge, this is the first work in the legal NLP that focuses on human label variation. We quantitatively assess different taxonomy categories and find that disagreements mainly stem from underspecification of the legal context, which poses challenges given the typically limited granularity and noise in COC metadata. We further assess the explainablility of state-of-the-art COC models on RaVE and observe limited agreement between models and experts. Overall, our case study reveals hitherto underappreciated complexities in creating benchmark datasets in legal NLP that revolve around identifying aspects of a case{'}s facts supposedly relevant for its outcome.",
+}
+
+@inproceedings{wang-etal-2023-distill,
+    title = "How to Distill your {BERT}: An Empirical Study on the Impact of Weight Initialisation and Distillation Objectives",
+    author = {Wang, Xinpeng  and
+      Weissweiler, Leonie  and
+      Sch{\"u}tze, Hinrich  and
+      Plank, Barbara},
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-short.157",
+    doi = "10.18653/v1/2023.acl-short.157",
+    pages = "1843--1852",
+    abstract = "Recently, various intermediate layer distillation (ILD) objectives have been shown to improve compression of BERT models via Knowledge Distillation (KD). However, a comprehensive evaluation of the objectives in both task-specific and task-agnostic settings is lacking. To the best of our knowledge, this is the first work comprehensively evaluating distillation objectives in both settings. We show that attention transfer gives the best performance overall. We also study the impact of layer choice when initializing the student from the teacher layers, finding a significant impact on the performance in task-specific distillation. For vanilla KD and hidden states transfer, initialisation with lower layers of the teacher gives a considerable improvement over higher layers, especially on the task of QNLI (up to an absolute percentage change of 17.8 in accuracy). Attention transfer behaves consistently under different initialisation settings. We release our code as an efficient transformer-based model distillation framework for further studies.",
+}
+
+@inproceedings{zhang-etal-2023-escoxlm,
+    title = "{ESCOXLM}-{R}: Multilingual Taxonomy-driven Pre-training for the Job Market Domain",
+    author = "Zhang, Mike  and
+      van der Goot, Rob  and
+      Plank, Barbara",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.662",
+    doi = "10.18653/v1/2023.acl-long.662",
+    pages = "11871--11890",
+    abstract = "The increasing number of benchmarks for Natural Language Processing (NLP) tasks in the computational job market domain highlights the demand for methods that can handle job-related tasks such as skill extraction, skill classification, job title classification, and de-identification. While some approaches have been developed that are specific to the job market domain, there is a lack of generalized, multilingual models and benchmarks for these tasks. In this study, we introduce a language model called ESCOXLM-R, based on XLM-R-large, which uses domain-adaptive pre-training on the European Skills, Competences, Qualifications and Occupations (ESCO) taxonomy, covering 27 languages. The pre-training objectives for ESCOXLM-R include dynamic masked language modeling and a novel additional objective for inducing multilingual taxonomical ESCO relations. We comprehensively evaluate the performance of ESCOXLM-R on 6 sequence labeling and 3 classification tasks in 4 languages and find that it achieves state-of-the-art results on 6 out of 9 datasets. Our analysis reveals that ESCOXLM-R performs better on short spans and outperforms XLM-R-large on entity-level and surface-level span-F1, likely due to ESCO containing short skill and occupation titles, and encoding information on the entity-level.",
+}
+
+@inproceedings{magron-etal-2024-jobskape,
+    title = "{J}ob{S}kape: A Framework for Generating Synthetic Job Postings to Enhance Skill Matching",
+    author = "Magron, Antoine  and
+      Dai, Anna  and
+      Zhang, Mike  and
+      Montariol, Syrielle  and
+      Bosselut, Antoine",
+    editor = "Hruschka, Estevam  and
+      Lake, Thom  and
+      Otani, Naoki  and
+      Mitchell, Tom",
+    booktitle = "Proceedings of the First Workshop on Natural Language Processing for Human Resources (NLP4HR 2024)",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.nlp4hr-1.4",
+    pages = "43--58",
+    abstract = "Recent approaches in skill matching, employing synthetic training data for classification or similarity model training, have shown promising results, reducing the need for time-consuming and expensive annotations. However, previous synthetic datasets have limitations, such as featuring only one skill per sentence and generally comprising short sentences. In this paper, we introduce JobSkape, a framework to generate synthetic data that tackles these limitations, specifically designed to enhance skill-to-taxonomy matching. Within this framework, we create SkillSkape, a comprehensive open-source synthetic dataset of job postings tailored for skill-matching tasks. We introduce several offline metrics that show that our dataset resembles real-world data. Additionally, we present a multi-step pipeline for skill extraction and matching tasks using large language models (LLMs), benchmarking against known supervised methodologies. We outline that the downstream evaluation results on real-world data can beat baselines, underscoring its efficacy and adaptability.",
+}
+
+@inproceedings{plank-2022-problem,
+    title = "The {``}Problem{''} of Human Label Variation: On Ground Truth in Data, Modeling and Evaluation",
+    author = "Plank, Barbara",
+    editor = "Goldberg, Yoav  and
+      Kozareva, Zornitsa  and
+      Zhang, Yue",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.731",
+    doi = "10.18653/v1/2022.emnlp-main.731",
+    pages = "10671--10682",
+    abstract = "Human variation in labeling is often considered noise. Annotation projects for machine learning (ML) aim at minimizing human label variation, with the assumption to maximize data quality and in turn optimize and maximize machine learning metrics. However, thisconventional practice assumes that there exists a *ground truth*, and neglects that there exists genuine human variation in labeling due to disagreement, subjectivity in annotation or multiple plausible answers. In this position paper, we argue that this big open problem of \textit{human label variation} persists and critically needs more attention to move our field forward. This is because human label variation impacts all stages of the ML pipeline: *data, modeling and evaluation*. However, few works consider all of these dimensions jointly; and existing research is fragmented. We reconcile different previously proposed notions of human label variation, provide a repository of publicly-available datasets with un-aggregated labels, depict approaches proposed so far, identify gaps and suggest ways forward. As datasets are becoming increasingly available, we hope that this synthesized view on the {``}problem{''} will lead to an open discussion on possible strategies to devise fundamentally new directions.",
+}
+
+@inproceedings{baan-etal-2022-stop,
+    title = "Stop Measuring Calibration When Humans Disagree",
+    author = "Baan, Joris  and
+      Aziz, Wilker  and
+      Plank, Barbara  and
+      Fernandez, Raquel",
+    editor = "Goldberg, Yoav  and
+      Kozareva, Zornitsa  and
+      Zhang, Yue",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.124",
+    doi = "10.18653/v1/2022.emnlp-main.124",
+    pages = "1892--1915",
+    abstract = "Calibration is a popular framework to evaluate whether a classifier knows when it does not know - i.e., its predictive probabilities are a good indication of how likely a prediction is to be correct. Correctness is commonly estimated against the human majority class. Recently, calibration to human majority has been measured on tasks where humans inherently disagree about which class applies. We show that measuring calibration to human majority given inherent disagreements is theoretically problematic, demonstrate this empirically on the ChaosNLI dataset, and derive several instance-level measures of calibration that capture key statistical properties of human judgements - including class frequency, ranking and entropy.",
+}
+
+@inproceedings{bassignana-etal-2022-evidence,
+    title = "Evidence {\textgreater} Intuition: Transferability Estimation for Encoder Selection",
+    author = {Bassignana, Elisa  and
+      M{\"u}ller-Eberstein, Max  and
+      Zhang, Mike  and
+      Plank, Barbara},
+    editor = "Goldberg, Yoav  and
+      Kozareva, Zornitsa  and
+      Zhang, Yue",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.283",
+    doi = "10.18653/v1/2022.emnlp-main.283",
+    pages = "4218--4227",
+    abstract = "With the increase in availability of large pre-trained language models (LMs) in Natural Language Processing (NLP), it becomes critical to assess their fit for a specific target task a priori{---}as fine-tuning the entire space of available LMs is computationally prohibitive and unsustainable. However, encoder transferability estimation has received little to no attention in NLP. In this paper, we propose to generate quantitative evidence to predict which LM, out of a pool of models, will perform best on a target task without having to fine-tune all candidates. We provide a comprehensive study on LM ranking for 10 NLP tasks spanning the two fundamental problem types of classification and structured prediction. We adopt the state-of-the-art Logarithm of Maximum Evidence (LogME) measure from Computer Vision (CV) and find that it positively correlates with final LM performance in 94{\%} of the setups. In the first study of its kind, we further compare transferability measures with the de facto standard of human practitioner ranking, finding that evidence from quantitative metrics is more robust than pure intuition and can help identify unexpected LM candidates.",
+}
+
+@inproceedings{bassignana-plank-2022-crossre,
+    title = "{C}ross{RE}: A Cross-Domain Dataset for Relation Extraction",
+    author = "Bassignana, Elisa  and
+      Plank, Barbara",
+    editor = "Goldberg, Yoav  and
+      Kozareva, Zornitsa  and
+      Zhang, Yue",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2022",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.findings-emnlp.263",
+    doi = "10.18653/v1/2022.findings-emnlp.263",
+    pages = "3592--3604",
+    abstract = "Relation Extraction (RE) has attracted increasing attention, but current RE evaluation is limited to in-domain evaluation setups. Little is known on how well a RE system fares in challenging, but realistic out-of-distribution evaluation setups. To address this gap, we propose CrossRE, a new, freely-available cross-domain benchmark for RE, which comprises six distinct text domains and includes multi-label annotations. An additional innovation is that we release meta-data collected during annotation, to include explanations and flags of difficult instances. We provide an empirical evaluation with a state-of-the-art model for relation classification. As the meta-data enables us to shed new light on the state-of-the-art model, we provide a comprehensive analysis on the impact of difficult cases and find correlations between model and human annotations. Overall, our empirical investigation highlights the difficulty of cross-domain RE. We release our dataset, to spur more research in this direction.",
 }

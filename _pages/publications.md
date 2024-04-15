@@ -23,7 +23,7 @@ title: Publications
 document.addEventListener('DOMContentLoaded', function() {
     const publicationContainer = document.getElementById('publication-container');
     const showMoreBtn = document.getElementById('show-more-btn');
-    let numItemsToShow = 5; // Number of items to reveal each time
+    let numItemsToShow = 15; // Number of items to reveal each time
 
     if (showMoreBtn && publicationContainer) {
         function showMoreItems() {
