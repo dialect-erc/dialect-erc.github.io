@@ -5,7 +5,16 @@ Link to webpage: https://dialect-erc.github.io/
 This webpage is based on the [Cookie Theme](https://github.com/abhinavs/cookie) and uses Tailwind CSS for styling
 
 ## Contributing to the repository
-TODO
+
+Prerequisites to build the project locally:  
+- Jekyll ([Jekyll Installation Guide](https://jekyllrb.com/docs/installation/))
+- Node.js (https://nodejs.org/en/download)
+
+Build the project:
+ - clone this repository to your local machine
+ - cd into the cloned repository and run ```bin/bootstrap```. This will install all required dependencies for the project.
+ - run ```bundle exec jekyll serve```. This will start a local development server, making the website accessible at http://127.0.0.1:4000/. After the server is running, you can edit the project files locally.
+Reload http://127.0.0.1:4000/ in your browser to see the changes applied.
 
 ### Editing Team Members
 Go to _pages/team.md and add a new entry. Pictures for team members go in assets/img/team.
@@ -34,4 +43,3 @@ Copy the Bibtex reference of the publication and add the reference to _bibliogra
 
 ### Known Issues
  - Breadcrumbs only work for home. Deeper layers add a trailing / which does not seem to work on the live server
- - Add pagination for news and publications
