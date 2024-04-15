@@ -4,6 +4,9 @@ Link to webpage: https://dialect-erc.github.io/
 
 This webpage is based on the [Cookie Theme](https://github.com/abhinavs/cookie) and uses Tailwind CSS for styling
 
+## Contributing to the repository
+TODO
+
 ### Editing Team Members
 Go to _pages/team.md and add a new entry. Pictures for team members go in assets/img/team.
 
