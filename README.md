@@ -6,9 +6,9 @@ This webpage is based on the [Cookie Theme](https://github.com/abhinavs/cookie) 
 
  * [Contributing to the repository](#contributing-to-the-repository)
  * [Editing Team Members](#editing-team-members)
- * [Adding Publications](#adding-publications)
  * [Adding News Posts](#adding-news-posts)
    + [Images in News Posts](#images-in-news-posts)
+ * [Adding Publications](#adding-publications)
  * [Known Issues](#known-issues)
 
 
