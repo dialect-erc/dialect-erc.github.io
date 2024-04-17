@@ -8,9 +8,10 @@ module.exports = {
       colors: {
         gray: colors.slate,
         primary: colors.blue,
-        link: colors.blue,
         secondary: colors.teal,
         tertiary: colors.slate,
+        header: colors.sky,
+        link: colors.blue,
         danger: colors.red,
       },
       fontFamily: {

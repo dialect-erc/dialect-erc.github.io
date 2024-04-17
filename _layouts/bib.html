@@ -13,7 +13,7 @@ layout: default
     <div class="col-span-4 text-left">
       {% if entry.url %}
       <a href="{{entry.url}}">
-        <p class="text-left font-semibold hover:text-blue-700 text-gray-800 mb-1">{{ entry.title }}</p>
+        <p class="text-left font-semibold hover:text-primary-700 text-gray-800 mb-1">{{ entry.title }}</p>
       </a>
       {% else %}
       <p class="text-left font-semibold text-gray-800 mb-1">{{ entry.title }}</p>
@@ -30,7 +30,7 @@ layout: default
         {% if entry.url %}
         <div class="flex items-center pl-4">
           <a href="{{entry.url}}">
-            <i class="fas fa-chevron-right cursor-pointer transition-transform transform hover:scale-110 hover:text-blue-700"></i>
+            <i class="fas fa-chevron-right cursor-pointer transition-transform transform hover:scale-110 hover:text-primary-700"></i>
           </a>
         </div>
         {% endif %}
