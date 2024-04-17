@@ -24,7 +24,7 @@ permalink: /publications/
 document.addEventListener('DOMContentLoaded', function() {
     const publicationContainer = document.getElementById('publication-container');
     const showMoreBtn = document.getElementById('show-more-btn');
-    let numItemsToShow = 15; // Number of items to reveal each time
+    let numItemsToShow = 10; // Number of items to reveal each time
 
     if (showMoreBtn && publicationContainer) {
         function showMoreItems() {
@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const itemsToReveal = Math.min(numItemsToShow, totalHiddenItems);
         for (let i = 0; i < itemsToReveal; i++) {
             hiddenItems[i].classList.remove('hidden');
+            hiddenItems[i].classList.add('opacity-100');
         }
         totalHiddenItems -= numItemsToShow
         // Hide the "Show More" button if all items are revealed
