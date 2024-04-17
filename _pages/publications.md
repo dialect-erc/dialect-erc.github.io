@@ -4,6 +4,16 @@ title: Publications
 permalink: /publications/
 ---
 
+<!-- container for the highlighted publications -->
+<!-- styling for bibliography is done in _layouts/highlight.html -->
+<!-- 
+  jekyll scholar inserts ol and li tags automatically. Styling for these is done in
+  assets/css/style.css and are selected via the highlighted-publications container
+-->
+<div id="highlighted-publications-container">
+  <!--{% bibliography  --query @*[highlight=1] --max 3 --template highlight %}-->
+</div>
+
 <!-- styling for bibliography is done in _layouts/bib.html -->
 <!-- to add publications, edit the _bibliography/papers.bib file-->
 <div id="publication-container">
@@ -34,7 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const itemsToReveal = Math.min(numItemsToShow, totalHiddenItems);
         for (let i = 0; i < itemsToReveal; i++) {
             hiddenItems[i].classList.remove('hidden');
-            hiddenItems[i].classList.add('opacity-100');
         }
         totalHiddenItems -= numItemsToShow
         // Hide the "Show More" button if all items are revealed

@@ -22,7 +22,9 @@ highlighter: rouge
 
 scholar:
   bibliography: papers.bib
-  bibliography_template: bib
+  bibliography_template: 
+    - bib
+    - highlight
   style: ieee
   sort_by: year,month
   order: descending
