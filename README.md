@@ -72,4 +72,4 @@ Copy the Bibtex reference of the publication and add the reference to _bibliogra
  - booktitle (or journal)
 
 ## Known Issues
-\-
+   - Add pagination for news page
