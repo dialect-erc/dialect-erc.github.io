@@ -2,9 +2,8 @@
 layout: post
 ---
 
-NLP **fi Bairisch**
+We are proud to present our recent research on NLP for Bavarian / **NLP fi Bairisch**! 
 
-We are proud to present our recent research on NLP for Bavarian. 
 Dialects were a blind spot for NLP research, as it has focused largely on the 'standard' language variant(s). We aim to contribute to closing this gap in this project.
 
 Accepted works to appear at LREC-COLING 2024 in Turin this year:
