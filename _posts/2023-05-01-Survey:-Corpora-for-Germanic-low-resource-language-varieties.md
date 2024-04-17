@@ -1,5 +1,6 @@
 ---
 layout: post
+image: default.png
 ---
 
 

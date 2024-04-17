@@ -38,6 +38,9 @@ layout: post
 After this, you can start writing your Markdown file as usual.
 The newly created post should then appear automatically under the news section. The two most recent news postings appear on the landing page.
 
+```
+<img class="h-auto max-w-full" src="path/to/img">
+```
 ### Adding Publications
 Copy the Bibtex reference of the publication and add the reference to _bibliography/papers.bib. Make sure that the following fields in the Bibtex reference are populated, as these will be used to create the publication's entry on the website:
  - year

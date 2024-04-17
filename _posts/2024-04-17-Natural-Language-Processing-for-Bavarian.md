@@ -1,5 +1,6 @@
 ---
 layout: post
+image: default.png
 ---
 
 We are proud to present our recent research on NLP for Bavarian / **NLP fi Bairisch**! 
