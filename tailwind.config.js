@@ -6,12 +6,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        gray: colors.slate,
         primary: colors.blue,
         secondary: colors.teal,
         tertiary: colors.slate,
         header: colors.sky,
-        link: colors.blue,
+        gray: colors.slate,
+        lightText: colors.slate[600],
+        mainText: colors.slate[700],
+        headings: colors.slate[800],
+        link: colors.blue[600],
+        linkLight: colors.blue[500],
         danger: colors.red,
       },
       fontFamily: {

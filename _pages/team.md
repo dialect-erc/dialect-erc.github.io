@@ -58,13 +58,13 @@ team:
           </div>
           {% if person.website %}
             <a href="{{person.website}}">
-              <h3 class="text-xl font-semibold text-link-500 hover:text-link-700 mb-2">{{ person.name }}</h3>
+              <h3 class="text-xl font-semibold text-linkLight hover:text-link mb-2">{{ person.name }}</h3>
             </a>
           {% else %}
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ person.name }}</h3>
+            <h3 class="text-xl font-semibold text-headings mb-2">{{ person.name }}</h3>
           {% endif %}
-          <p class="text-sm text-gray-600">{{ person.position }}</p>
-          <p class="text-sm text-gray-600 mt-4 italic align-bottom">{{ person.affiliation }}</p>
+          <p class="text-sm text-lightText">{{ person.position }}</p>
+          <p class="text-sm text-lightText mt-4 italic align-bottom">{{ person.affiliation }}</p>
         </div>
       </div>
     {%- endfor -%}

@@ -6,12 +6,12 @@ layout: default
 
   <header class="relative px-4 sm:px-6 lg:px-8">
     <div class="text-lg max-w-prose mx-auto mb-4">
-      <h1 class="mt-2 mb-2 text-3xl text-center-DIS leading-8 font-extrabold tracking-tight-DIS text-gray-800 sm:text-4xl sm:leading-10" itemprop="name headline">
+      <h1 class="mt-2 mb-2 text-3xl text-center-DIS leading-8 font-extrabold tracking-tight-DIS text-heading sm:text-4xl sm:leading-10" itemprop="name headline">
         {{ page.title | escape }}
       </h1>
       {% include breadcrumbs.html %}
     </div>
-    <p class="max-w-prose mx-auto mb-2 text-lg uppercase text-gray-500">
+    <p class="max-w-prose mx-auto mb-2 text-lg uppercase text-lightText">
       <span class="font-bold tracking-wide">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <time class="dt-published text-xs text-secondary-600" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
@@ -42,7 +42,7 @@ layout: default
     </p>
   </header>
 
-  <div class="prose prose-lg px-4 md:px-0 text-gray-700 mx-auto" itemprop="articleBody">
+  <div class="prose prose-lg px-4 md:px-0 text-mainText mx-auto" itemprop="articleBody">
     {{ content }}
   </div>
 

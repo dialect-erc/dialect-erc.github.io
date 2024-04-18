@@ -25,7 +25,7 @@ permalink: /publications/
 
 <!-- "Show More" button -->
 <div id="show-more-container">
-    <button class="bg-link-500 hover:bg-link-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md" id="show-more-btn">
+    <button class="bg-primary-500 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md" id="show-more-btn">
   Show More
 </button>
 </div>

@@ -25,8 +25,8 @@ permalink: /news/
         <div class="flex-1 items-start">
           <div class="mb-4">
             <!-- Title with Link -->
-            <h2 class="text-2xl tracking-tight font-bold text-gray-800">
-              <a href="{{ post.url | relative_url }}" class="hover:text-primary-700">{{ post.title }}</a>
+            <h2 class="text-2xl tracking-tight font-bold text-headings">
+              <a href="{{ post.url | relative_url }}" class="hover:text-link">{{ post.title }}</a>
             </h2>
             <!-- Date and Metadata -->
             <div class="flex items-center text-xs text-secondary-600 font-bold uppercase pt-1">
@@ -34,12 +34,12 @@ permalink: /news/
             </div>
           </div>
           <!-- Excerpt/Content -->
-          <div class="text-gray-700 post-content">
+          <div class="text-mainText text-lg post-content">
             {{ post.excerpt | strip_html }}
           </div>
           <!-- Read More Link -->
           <div class="mt-4">
-            <a href="{{ post.url | relative_url }}" class="text-primary-500 uppercase text-sm font-semibold hover:text-primary-700">Read More <i class="fas fa-chevron-right ml-1"></i></a>
+            <a href="{{ post.url | relative_url }}" class="text-linkLight uppercase text-sm font-semibold hover:text-link">Read More <i class="fas fa-chevron-right ml-1"></i></a>
           </div>
         </div>
       </div>
