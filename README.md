@@ -78,7 +78,7 @@ You can add highlighted publications which will be shown at the top of the page 
  - month
  - url
  - booktitle (or journal)
- - **image**: add the filename (just filename, not the full path) here of the image that should be displayed together with the publication. Place your images under **/assets/img/publications/**
+ - **image**: add the filename (just filename, not the full path) here of the image that should be displayed together with the publication. Place your images under **/assets/img/publications/**. You can use the MaiNLP logo as a default by just adding image = "default.png"
  - **teaser**: add a short teaser text for the publication here. There is space for 1 - 2 sentences, additional text will be cut off.
 
 ## Known Issues
