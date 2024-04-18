@@ -9,6 +9,7 @@ This webpage is based on the [Cookie Theme](https://github.com/abhinavs/cookie) 
  * [Adding News Posts](#adding-news-posts)
    + [Images in News Posts](#images-in-news-posts)
  * [Adding Publications](#adding-publications)
+   + [Highlighted Publications](#highlighted-publications)
  * [Known Issues](#known-issues)
 
 
