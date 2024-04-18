@@ -71,5 +71,14 @@ Copy the Bibtex reference of the publication and add the reference to _bibliogra
  - url
  - booktitle (or journal)
 
+### Highlighted Publications
+You can add highlighted publications which will be shown at the top of the page with an image and a short teaser. For this, add the Bibtex reference of the respective paper to _bibliography/highlights.bib. Make sure the following fields in the Bibtex reference are populated:
+ - year
+ - month
+ - url
+ - booktitle (or journal)
+ - **image**: add the filename (just filename, not the full path) here of the image that should be displayed together with the publication. Place your images under **/assets/img/publications/**
+ - **teaser**: add a short teaser text for the publication here. There is space for 1 - 2 sentences, additional text will be cut off.
+
 ## Known Issues
    - Add pagination for news page
