@@ -1,6 +1,6 @@
 ---
 layout: post
-image: default.png
+image: GerLowResourceVarieties.png
 ---
 
 
