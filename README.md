@@ -73,7 +73,7 @@ Copy the Bibtex reference of the publication and add the reference to _bibliogra
  - booktitle (or journal)
 
 ### Highlighted Publications
-You can add highlighted publications which will be shown at the top of the page with an image and a short teaser. For this, add the Bibtex reference of the respective paper to _bibliography/highlights.bib. Make sure the following fields in the Bibtex reference are populated:
+You can add up to 3 highlighted publications which will be shown at the top of the page with an image and a short teaser. For this, add the Bibtex reference of the respective paper to _bibliography/highlights.bib. Make sure the following fields in the Bibtex reference are populated:
  - year
  - month
  - url
