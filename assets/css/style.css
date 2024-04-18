@@ -975,6 +975,12 @@ video {
   height: auto;
 }.h-48 {
   height: 12rem;
+}.h-96 {
+  height: 24rem;
+}.h-44 {
+  height: 11rem;
+}.h-16 {
+  height: 4rem;
 }.w-full {
   width: 100%;
 }.w-8\/12 {
@@ -1042,6 +1048,8 @@ video {
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }.overflow-hidden {
   overflow: hidden;
+}.overflow-clip {
+  overflow: clip;
 }.whitespace-nowrap {
   white-space: nowrap;
 }.rounded {
@@ -1088,6 +1096,8 @@ video {
   padding: 1.25rem;
 }.p-2 {
   padding: 0.5rem;
+}.p-4 {
+  padding: 1rem;
 }.px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1136,6 +1146,8 @@ video {
   padding-bottom: 2rem;
 }.pt-1 {
   padding-top: 0.25rem;
+}.pb-12 {
+  padding-bottom: 3rem;
 }.pt-8 {
   padding-top: 2rem;
 }.pb-4 {
@@ -1271,7 +1283,7 @@ video {
   transition-duration: 300ms;
 }.duration-700 {
   transition-duration: 700ms;
-}#highlighted-publications-container ol{display:flex;flex-wrap:wrap;gap:1rem}.highlight .hll{background-color:#515151}.highlight{background:#2d2d2d;color:#f2f0ec}.highlight .c{color:#a3cacd}.highlight .err{color:#f2777a}.highlight .k{color:#c9c}.highlight .l{color:#f99157}.highlight .n{color:#f2f0ec}.highlight .o{color:#6cc}.highlight .p{color:#f2f0ec}.highlight .ch{color:#a3cacd}.highlight .cm{color:#a3cacd}.highlight .cp{color:#a3cacd}.highlight .cpf{color:#a3cacd}.highlight .c1{color:#a3cacd}.highlight .cs{color:#a3cacd}.highlight .gd{color:#f2777a}.highlight .ge{font-style:italic}.highlight .gh{color:#f2f0ec;font-weight:bold}.highlight .gi{color:#9c9}.highlight .gp{color:#a3cacd;font-weight:bold}.highlight .gs{font-weight:bold}.highlight .gu{color:#6cc;font-weight:bold}.highlight .kc{color:#c9c}.highlight .kd{color:#c9c}.highlight .kn{color:#6cc}.highlight .kp{color:#c9c}.highlight .kr{color:#c9c}.highlight .kt{color:#fc6}.highlight .ld{color:#9c9}.highlight .m{color:#f99157}.highlight .s{color:#9c9}.highlight .na{color:#69c}.highlight .nb{color:#f2f0ec}.highlight .nc{color:#fc6}.highlight .no{color:#f2777a}.highlight .nd{color:#6cc}.highlight .ni{color:#f2f0ec}.highlight .ne{color:#f2777a}.highlight .nf{color:#69c}.highlight .nl{color:#f2f0ec}.highlight .nn{color:#fc6}.highlight .nx{color:#69c}.highlight .py{color:#f2f0ec}.highlight .nt{color:#6cc}.highlight .nv{color:#f2777a}.highlight .ow{color:#6cc}.highlight .w{color:#f2f0ec}.highlight .mb{color:#f99157}.highlight .mf{color:#f99157}.highlight .mh{color:#f99157}.highlight .mi{color:#f99157}.highlight .mo{color:#f99157}.highlight .sa{color:#9c9}.highlight .sb{color:#9c9}.highlight .sc{color:#f2f0ec}.highlight .dl{color:#9c9}.highlight .sd{color:#a3cacd}.highlight .s2{color:#9c9}.highlight .se{color:#f99157}.highlight .sh{color:#9c9}.highlight .si{color:#f99157}.highlight .sx{color:#9c9}.highlight .sr{color:#9c9}.highlight .s1{color:#9c9}.highlight .ss{color:#9c9}.highlight .bp{color:#f2f0ec}.highlight .fm{color:#69c}.highlight .vc{color:#f2777a}.highlight .vg{color:#f2777a}.highlight .vi{color:#f2777a}.highlight .vm{color:#f2777a}.highlight .il{color:#f99157}.hover\:scale-110:hover {
+}#highlighted-publications-container ol{display:grid;grid-template-columns:repeat(1,1fr);@media(min-width:640px){grid-template-columns:repeat(2,1fr)}@media(min-width:1024px){grid-template-columns:repeat(3,1fr)}gap:12px}.highlight .hll{background-color:#515151}.highlight{background:#2d2d2d;color:#f2f0ec}.highlight .c{color:#a3cacd}.highlight .err{color:#f2777a}.highlight .k{color:#c9c}.highlight .l{color:#f99157}.highlight .n{color:#f2f0ec}.highlight .o{color:#6cc}.highlight .p{color:#f2f0ec}.highlight .ch{color:#a3cacd}.highlight .cm{color:#a3cacd}.highlight .cp{color:#a3cacd}.highlight .cpf{color:#a3cacd}.highlight .c1{color:#a3cacd}.highlight .cs{color:#a3cacd}.highlight .gd{color:#f2777a}.highlight .ge{font-style:italic}.highlight .gh{color:#f2f0ec;font-weight:bold}.highlight .gi{color:#9c9}.highlight .gp{color:#a3cacd;font-weight:bold}.highlight .gs{font-weight:bold}.highlight .gu{color:#6cc;font-weight:bold}.highlight .kc{color:#c9c}.highlight .kd{color:#c9c}.highlight .kn{color:#6cc}.highlight .kp{color:#c9c}.highlight .kr{color:#c9c}.highlight .kt{color:#fc6}.highlight .ld{color:#9c9}.highlight .m{color:#f99157}.highlight .s{color:#9c9}.highlight .na{color:#69c}.highlight .nb{color:#f2f0ec}.highlight .nc{color:#fc6}.highlight .no{color:#f2777a}.highlight .nd{color:#6cc}.highlight .ni{color:#f2f0ec}.highlight .ne{color:#f2777a}.highlight .nf{color:#69c}.highlight .nl{color:#f2f0ec}.highlight .nn{color:#fc6}.highlight .nx{color:#69c}.highlight .py{color:#f2f0ec}.highlight .nt{color:#6cc}.highlight .nv{color:#f2777a}.highlight .ow{color:#6cc}.highlight .w{color:#f2f0ec}.highlight .mb{color:#f99157}.highlight .mf{color:#f99157}.highlight .mh{color:#f99157}.highlight .mi{color:#f99157}.highlight .mo{color:#f99157}.highlight .sa{color:#9c9}.highlight .sb{color:#9c9}.highlight .sc{color:#f2f0ec}.highlight .dl{color:#9c9}.highlight .sd{color:#a3cacd}.highlight .s2{color:#9c9}.highlight .se{color:#f99157}.highlight .sh{color:#9c9}.highlight .si{color:#f99157}.highlight .sx{color:#9c9}.highlight .sr{color:#9c9}.highlight .s1{color:#9c9}.highlight .ss{color:#9c9}.highlight .bp{color:#f2f0ec}.highlight .fm{color:#69c}.highlight .vc{color:#f2777a}.highlight .vg{color:#f2777a}.highlight .vi{color:#f2777a}.highlight .vm{color:#f2777a}.highlight .il{color:#f99157}.hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
