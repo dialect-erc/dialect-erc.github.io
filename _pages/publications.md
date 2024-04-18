@@ -10,10 +10,12 @@ permalink: /publications/
   jekyll scholar inserts ol and li tags automatically. Styling for these is done in
   assets/css/style.css and are selected via the highlighted-publications container
 -->
-<div id="highlighted-publications-container">
-  <!--{% bibliography  --query @*[highlight=1] --max 3 --template highlight %}-->
+<h2 class="text-2xl text-secondary-600 font-semibold pb-12">Selected Publications</h2>
+<div id="highlighted-publications-container" class="pb-24">
+  {% bibliography --file highlights --max 3 --template highlight %}
 </div>
 
+<h2 class="text-2xl text-secondary-600 font-semibold pb-12">All Publications</h2>
 <!-- styling for bibliography is done in _layouts/bib.html -->
 <!-- to add publications, edit the _bibliography/papers.bib file-->
 <div id="publication-container">

@@ -1,6 +1,8 @@
-
-<div class="w-full">
-    Test
-</div>
-
-
+<a class="block w-full" href="{{entry.url}}">
+  <div class="bg-white rounded-lg p-4 shadow-lg transition hover:shadow-xl duration-300 flex flex-col h-96">
+    <img src="/assets/img/publications/{{ entry.image }}" alt="Publication Image" class="pb-4 w-full h-44 object-cover object-center">
+    <p class="text-secondary-600 text-sm capitalize text-start">{{ entry.month }} {{ entry.year }}</p>
+    <h3 class="text-lg font-semibold text-primary-700 pb-4">{{ entry.title }}</h3>
+    <p class="text-sm text-gray-600 h-16 overflow-clip mt-2">{{ entry.teaser }}</p>
+  </div>
+</a>
