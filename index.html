@@ -55,7 +55,7 @@ layout: home
           </a>
           {% endif %}
           <div class="px-4 py-6">
-            <a href="{{ post.url }}" class="block mb-2">
+            <a href="{{ post.url }}" class="inline-block mb-2">
               <h3 class="text-xl font-bold text-darkGray hover:text-link">{{ post.title }}</h3>
             </a>
             <p class="text-sm text-secondary-600 font-bold mb-4">{{ post.date | date: "%b %d, %Y" }}</p>
@@ -90,10 +90,10 @@ layout: home
         <p class="text-sm text-lightText text-center mt-2">Here you can find an overview of all publications of the project</p>
       </a>
     
-      <a href="{{ site.baseurl }}/ressources" class="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+      <a href="{{ site.baseurl }}/resources" class="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300">
         <i class="text-4xl mb-2 fas fa-file-alt text-link"></i>
         <h3 class="text-lg font-semibold text-link">Resources</h3>
-        <p class="text-sm text-lightText text-center mt-2">You can find an overview of datasets and other ressources of the project here</p>
+        <p class="text-sm text-lightText text-center mt-2">You can find an overview of datasets and other resources of the project here</p>
       </a>
     
       <a href="{{ site.baseurl }}/team" class="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300">
