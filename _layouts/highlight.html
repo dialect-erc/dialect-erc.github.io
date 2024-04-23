@@ -1,8 +1,10 @@
-<a class="block w-full" href="{{entry.url}}">
-  <div class="bg-white rounded-lg p-4 shadow-lg transition hover:shadow-xl duration-300 flex flex-col h-96">
-    <img src="/assets/img/publications/{{ entry.image }}" alt="Publication Image" class="pb-4 w-full h-44 object-cover object-center">
-    <p class="text-secondary-600 text-sm capitalize text-start">{{ entry.month }} {{ entry.year }}</p>
-    <h3 class="text-lg font-semibold text-link pb-4">{{ entry.title }}</h3>
-    <p class="text-sm text-mainText h-16 overflow-clip mt-2">{{ entry.teaser }}</p>
+<a class="block w-full" href="{{ entry.url }}" target="_blank" rel="noreferrer">
+  <div class="bg-white rounded-lg p-4 shadow-lg transition hover:shadow-xl duration-300 flex flex-col h-112">
+    <img src="/assets/img/publications/{{ entry.image }}" alt="Publication Image" class="rounded-md pb-4 w-full h-44 object-cover object-center">
+    <p class="text-secondary-600 text-sm font-semibold capitalize text-start">{{ entry.month }} {{ entry.year }}</p>
+    <h3 class="text-lg font-semibold text-link pb-2">{{ entry.title }}</h3>
+    <div class="overflow-y-auto h-42">
+      <p class="text-sm text-mainText mt-2">{{ entry.teaser }}</p>
+    </div>
   </div>
 </a>

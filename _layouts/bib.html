@@ -12,7 +12,7 @@ layout: default
 
     <div class="col-span-4 text-left">
       {% if entry.url %}
-      <a href="{{entry.url}}" class="inline-block">
+      <a href="{{entry.url}}" class="inline-block" target="_blank" rel="noreferrer">
         <p class="text-left font-semibold hover:text-link text-heading mb-1">{{ entry.title }}</p>
       </a>
       {% else %}
@@ -29,7 +29,7 @@ layout: default
         <!-- Insert link to publication if URL exists-->
         {% if entry.url %}
         <div class="flex items-center pl-4">
-          <a href="{{entry.url}}">
+          <a href="{{entry.url}}" target="_blank" rel="noreferrer">
             <i class="fas fa-chevron-right cursor-pointer transition-transform transform hover:scale-110 hover:text-link"></i>
           </a>
         </div>
