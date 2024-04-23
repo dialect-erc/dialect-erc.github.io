@@ -10,58 +10,42 @@ resources:
             - label-variation
         url: https://github.com/AxelSorensenDev/Eevee
         description: |
-                An Easy Annotation Tool for Natural Language Processing. It can run directly in the browser (no setup required) and uses tab-separated files (as opposed to character offsets or task-specific formats) for annotation. It allows for annotation of multiple tasks on a single dataset and supports four task-types: sequence labeling, span labeling, text classification and seq2seq.
+                An NLP annotation tool that can run directly in the browser. It allows for annotation of multiple tasks on a single dataset and supports four task-types: sequence labeling, span labeling, text classification and seq2seq.
     -   name: MaiBaam
         tags:
             - dataset
             - linguistic-variation
         url: https://github.com/UniversalDependencies/UD_Bavarian-MaiBaam
         description: |
-                A Multi-Dialectal Bavarian Universal Dependency Treebank. Despite the success of the Universal Dependencies (UD) project exemplified by its impressive language breadth,
-                there is still a lack in ‘within-language breadth’: most treebanks focus on standard languages. Even for German, the
-                language with the most annotations in UD, so far no treebank exists for one of its language varieties spoken by
-                over 10M people: Bavarian. To contribute to closing this gap, we present the first multi-dialect Bavarian treebank
-                (MaiBaam) manually annotated with part-of-speech and syntactic dependency information in UD, covering multiple
-                text genres (wiki, fiction, grammar examples, social, non-fiction).
+                A Bavarian Universal Dependency Treebank with 15k annotated tokens from all Bavarian dialect areas and multiple text genres (wiki, fiction, grammar examples, social, non-fiction).
     -   name: NaBaLiSID
         tags:
             - dataset
             - linguistic-variation
         url: https://github.com/mainlp/NaLiBaSID
         description: |
-                We present NaBaLiSID (Natural Lithuanian and Bavarian SID), which contains new slot and intent detection evaluation datasets for Bavarian and Lithuanian, created by manual translation.
-    -   name: Germanic LRL Corpora
+                NaBaLiSID (Natural Lithuanian and Bavarian Slot and Intent Detection) provides new slot and intent detection evaluation datasets for Bavarian and Lithuanian, combining translations of xSID and MASSIVE with more natural, non-translated utterances.
+    -   name: Germanic LRL/Dialect Corpora
         tags:
             - dataset
             - linguistic-variation
         url: https://github.com/mainlp/germanic-lrl-corpora
         description: |
-                A Survey of Corpora for Germanic Low-Resource Languages and Dialects. Despite much progress in recent years, the
-                vast majority of work in natural language
-                processing (NLP) is on standard languages
-                with many speakers. In this work, we
-                instead focus on low-resource languages
-                and in particular non-standardized lowresource languages. Even within branches
-                of major language families, often considered well-researched, little is known about
-                the extent and type of available resources
-                and what the major NLP challenges are for
-                these language varieties. Focusing on
-                Germanic low-resource language varieties,
-                we provide such an overview in this dataset.
+                An overview of corpora for Germanic low-resource languages and dialects, covering >30 languages and >100 corpora.
     -   name: BarNER
         tags:
             - dataset
             - linguistic-variation
         url: https://github.com/mainlp/BarNER
         description: |
-                Recognizing Named Entities in Bavarian Dialectal Data. Named Entity Recognition (NER) is a fundamental task to extract key information from texts, but annotated resources are scarce for dialects. This is the first dialectal NER dataset for German with 161K tokens annotated on Bavarian Wikipedia articles (bar-wiki) and tweets (bar-tweet), using a schema adapted from German CoNLL 2006 and GermEval.
-    -   name: Awesome Human Label Variation
+                BarNER (Bavarian Named Entity Recognition) presents annotations for named entities in Bavarian wiki and tweet data (161k tokens).
+    -   name: Human Label Variation
         tags:
             - dataset
             - label-variation
         url: https://github.com/mainlp/awesome-human-label-variation
         description: |
-                A curated list of awesome datasets with human label variation (un-aggregated labels) in Natural Language Processing and Computer Vision, including links to related initiatives and key references. The key focus is to collect datasets that contain multiple annotations per instance, to enable learning with human label variation/disagreement. 
+                An overview of 50+ datasets with human label variation (multiple, un-aggregated annotations per instance) in Natural Language Processing and Computer Vision.
 ---
 
 
