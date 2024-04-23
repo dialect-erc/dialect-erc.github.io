@@ -17,7 +17,7 @@ resources:
             - linguistic-variation
         url: https://github.com/UniversalDependencies/UD_Bavarian-MaiBaam
         description: |
-                A Bavarian Universal Dependency Treebank with 15k annotated tokens from all Bavarian dialect areas and multiple text genres (wiki, fiction, grammar examples, social, non-fiction).
+                A Bavarian Universal Dependency treebank with 15k annotated tokens from all Bavarian dialect areas and multiple text genres (wiki, fiction, grammar examples, social, non-fiction).
     -   name: NaBaLiSID
         tags:
             - dataset
@@ -25,13 +25,6 @@ resources:
         url: https://github.com/mainlp/NaLiBaSID
         description: |
                 NaBaLiSID (Natural Lithuanian and Bavarian Slot and Intent Detection) provides new slot and intent detection evaluation datasets for Bavarian and Lithuanian, combining translations of xSID and MASSIVE with more natural, non-translated utterances.
-    -   name: Germanic LRL/Dialect Corpora
-        tags:
-            - dataset
-            - linguistic-variation
-        url: https://github.com/mainlp/germanic-lrl-corpora
-        description: |
-                An overview of corpora for Germanic low-resource languages and dialects, covering >30 languages and >100 corpora.
     -   name: BarNER
         tags:
             - dataset
@@ -39,6 +32,13 @@ resources:
         url: https://github.com/mainlp/BarNER
         description: |
                 BarNER (Bavarian Named Entity Recognition) presents annotations for named entities in Bavarian wiki and tweet data (161k tokens).
+    -   name: Germanic LRL/Dialect Corpora
+        tags:
+            - dataset
+            - linguistic-variation
+        url: https://github.com/mainlp/germanic-lrl-corpora
+        description: |
+                An overview of corpora for Germanic low-resource languages and dialects, covering >30 languages and >100 corpora.
     -   name: Human Label Variation
         tags:
             - dataset
