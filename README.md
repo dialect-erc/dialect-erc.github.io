@@ -10,6 +10,7 @@ This webpage is based on the [Cookie Theme](https://github.com/abhinavs/cookie) 
    + [Images in News Posts](#images-in-news-posts)
  * [Adding Publications](#adding-publications)
    + [Highlighted Publications](#highlighted-publications)
+ * [Adding Resources](#adding-resources)
  * [Known Issues](#known-issues)
 
 
@@ -43,6 +44,7 @@ Add the following three lines at the beginning of the file
 ```
 ---
 layout: post
+title: YourTitle
 ---
 ```
 After this, you can start writing your Markdown file as usual.
@@ -80,6 +82,26 @@ You can add up to 3 highlighted publications which will be shown at the top of t
  - booktitle (or journal)
  - **image**: add the filename (just filename, not the full path) here of the image that should be displayed together with the publication. Place your images under **/assets/img/publications/**. You can use the MaiNLP logo as a default by just adding image = "default.png"
  - **teaser**: add a short teaser text for the publication here. There is space for 1 - 2 sentences, additional text will be cut off.
+
+## Adding Resources
+Go to _pages/resources.md and add a new entry at the beginning of the file. Following fields should be populated:
+   - name
+   - tags (list of available tags: *tool*, *dataset*, *linguistic-variation*, *label-variation*)
+   - github (link to GitHub page of the resource. Should always be populated as it is used as the destination for the resource's title link.)
+   - paper (link to paper. If no paper has been published yet, don't include this)
+   - description
+
+A resulting entry could look like this:
+```
+-    name: Germanic LRL/Dialect Corpora
+     tags:
+         - dataset
+         - linguistic-variation
+     github: https://github.com/mainlp/germanic-lrl-corpora
+     paper: https://aclanthology.org/2023.nodalida-1.41/
+     description: |
+             An overview of corpora for Germanic low-resource languages and dialects, covering >30 languages and >100 corpora.
+```
 
 ## Known Issues
    - Add pagination for news page
