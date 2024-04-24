@@ -104,4 +104,4 @@ A resulting entry could look like this:
 ```
 
 ## Known Issues
-   - Add pagination for news page
+   \-
