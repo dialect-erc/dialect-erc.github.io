@@ -4,7 +4,6 @@ description: > # this means to ignore newlines until "show_excerpts:"
 baseurl: ""
 url: "https://dialect-erc.github.io/" # change this URL, this is needed for generating right sitemap
 
-permalink: "/news/:title/"
 
 plugins:
   - jekyll-feed
@@ -14,7 +13,8 @@ plugins:
   - jekyll-paginate
 
 
-paginate: 3
+paginate: 1
+paginate_path: "/news/:num/"
 
 css_dir: "assets/css" # defaults to "css"
 
