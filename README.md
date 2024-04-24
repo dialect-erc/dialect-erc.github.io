@@ -2,7 +2,7 @@
 
 Link to webpage: https://dialect-erc.github.io/
 
-This webpage is based on the [Cookie Theme](https://github.com/abhinavs/cookie) and uses Tailwind CSS for styling
+This webpage is based on the [Cookie Theme](https://github.com/abhinavs/cookie) (Jekyll + TailwindCSS)
 
  * [Contributing to the repository](#contributing-to-the-repository)
  * [Editing Team Members](#editing-team-members)
