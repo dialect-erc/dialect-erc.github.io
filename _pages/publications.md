@@ -25,7 +25,7 @@ permalink: /publications/
 
 <!-- "Show More" button -->
 <div id="show-more-container">
-    <button class="bg-primary-500 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md" id="show-more-btn">
+    <button class="bg-primary-500 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hidden" id="show-more-btn">
   Show More
 </button>
 </div>
@@ -36,8 +36,9 @@ permalink: /publications/
 document.addEventListener('DOMContentLoaded', function() {
     const publicationContainer = document.getElementById('publication-container');
     const showMoreBtn = document.getElementById('show-more-btn');
+    const items = document.querySelectorAll("#publication-item");
+    
     let numItemsToShow = 10; // Number of items to reveal each time
-
     if (showMoreBtn && publicationContainer) {
         function showMoreItems() {
         let hiddenItems = publicationContainer.querySelectorAll('.hidden');
@@ -56,6 +57,10 @@ document.addEventListener('DOMContentLoaded', function() {
     showMoreBtn.addEventListener('click', showMoreItems);
     // click once on page load
     showMoreItems();
+    // show button only after initial items have been displayed
+    if (numItemsToShow < items.length) {
+      showMoreBtn.classList.remove('hidden')
+    }
   }
 });
 </script>
