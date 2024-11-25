@@ -4,48 +4,53 @@ title: Team
 permalink: /team/
 
 team:
-    -   name: Barbara Plank
-        affiliation: LMU Munich
-        position: Prof. Dr. and Chair for AI and Computational Linguistics
-        picture: barbara.jpg
-        website: https://bplank.github.io/
-    -   name: Siyao (Logan) Peng
-        affiliation: LMU Munich
-        position: Postdoc
-        picture: logan.jpeg
-        website: https://logan-siyao-peng.github.io/
-    -   name: Xinpeng Wang
-        affiliation: LMU Munich
-        position: PhD student
-        picture: xinpeng.jpg
-        website: https://xinpeng-wang.github.io/
-    -   name: Verena Blaschke
-        affiliation: LMU Munich
-        position: PhD student
-        picture: verena.png
-        website: https://verenablaschke.github.io/
-    -   name: Sebastian Loftus
-        affiliation: LMU Munich
-        position: Student assistant
-        picture: sebastian.jpg
-    -   name: Chengzhi Hu
-        affiliation: LMU Munich
-        position: Student assistant
-        picture: chengzhi.png
-    -   name: Miriam Winkler
-        affiliation: LMU Munich
-        position: Student assistant
-        picture: miriam.jpg
-    -   name: Zihang Sun
-        affiliation: LMU Munich
-        position: Student assistant
-        picture: zihang.png
-    -   name: Huangyan Shan
-        affiliation: LMU Munich
-        position: Student assistant
-        picture: huangyan.jpg
+  - name: Barbara Plank
+    affiliation: LMU Munich
+    position: Prof. Dr. and Chair for AI and Computational Linguistics
+    picture: barbara.jpg
+    website: https://bplank.github.io/
+  - name: Siyao (Logan) Peng
+    affiliation: LMU Munich
+    position: Postdoc
+    picture: logan.jpeg
+    website: https://logan-siyao-peng.github.io/
+  - name: Xinpeng Wang
+    affiliation: LMU Munich
+    position: PhD student
+    picture: xinpeng.jpg
+    website: https://xinpeng-wang.github.io/
+  - name: Verena Blaschke
+    affiliation: LMU Munich
+    position: PhD student
+    picture: verena.png
+    website: https://verenablaschke.github.io/
+  - name: Soh-Eun (Ryan) Shim
+    affiliation: LMU Munich
+    position: PhD student
+    picture: default.png
+    website: https://www.cis.lmu.de/personen/mitarbeiter/soheunshim/index.html
+  - name: Felicia Körner
+    affiliation: LMU Munich
+    position: PhD student
+    picture: felicia.JPG
+    website: https://koernerfelicia.github.io/
+  - name: Sebastian Loftus
+    affiliation: LMU Munich
+    position: Student assistant
+    picture: sebastian.jpg
+  - name: Chengzhi Hu
+    affiliation: LMU Munich
+    position: Student assistant
+    picture: chengzhi.png
+  - name: Miriam Winkler
+    affiliation: LMU Munich
+    position: Student assistant
+    picture: miriam.jpg
+  - name: Huangyan Shan
+    affiliation: LMU Munich
+    position: Student assistant
+    picture: huangyan.jpg
 ---
-
 
 <!-- This code inserts all team members. To add a team member, edit the team list above-->
 <div class="pt-8 flex justify-center">
