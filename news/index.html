@@ -29,7 +29,7 @@ title: News
             </div>
           </div>
           <div class="text-mainText text-lg post-content">
-            {{ post.excerpt | strip_html }}
+            {{ post.teaser | strip_html }}
           </div>
           <div class="mt-4">
             <a href="{{ post.url | relative_url }}" class="text-linkLight uppercase text-sm font-semibold hover:text-link">Read More<i class="fas fa-chevron-right ml-1"></i></a>

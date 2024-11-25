@@ -59,7 +59,7 @@ layout: home
               <h3 class="text-xl font-bold text-darkGray hover:text-link">{{ post.title }}</h3>
             </a>
             <p class="text-sm text-secondary-600 font-bold mb-4">{{ post.date | date: "%b %d, %Y" }}</p>
-            <p class="text-sm text-lightText">{{ post.excerpt }}</p>
+            <p class="text-sm text-lightText">{{ post.teaser }}</p>
             <div class="flex items-center justify-between mt-4">
               <a href="{{ post.url | relative_url }}" class="text-linkLight uppercase text-sm font-semibold hover:text-link">Read More <i class="fas fa-chevron-right ml-1"></i></a>
             </div>

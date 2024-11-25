@@ -1,5 +1,6 @@
 ---
 layout: post
+teaser: Article about the project featured in the LMU News
 ---
 
 Featured in the LMU news: "Barbara Plank researches natural language processing (NLP) at LMU. She works on language technologies and artificial intelligence with a strong focus on human concerns."
