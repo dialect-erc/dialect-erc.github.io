@@ -3,6 +3,14 @@ layout: page
 title: Resources
 permalink: /resources/
 resources:
+    -   name: WikiDIR
+        tags:
+            - dataset
+            - linguistic-variation
+        github: https://github.com/mainlp/WikiDIR
+        paper: https://aclanthology.org/2025.coling-main.678/
+        description: |
+                An information retrieval dataset for German dialects and regional languages, with dictionaries of spelling/lexical variations.
     -   name: Eevee
         tags:
             - tool
