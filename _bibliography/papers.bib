@@ -348,6 +348,115 @@
     abstract = "Label aggregation such as majority voting is commonly used to resolve annotator disagreement in dataset creation. However, this may disregard minority values and opinions. Recent studies indicate that learning from individual annotations outperforms learning from aggregated labels, though they require a considerable amount of annotation. Active learning, as an annotation cost-saving strategy, has not been fully explored in the context of learning from disagreement. We show that in the active learning setting, a multi-head model performs significantly better than a single-head model in terms of uncertainty estimation. By designing and evaluating acquisition functions with annotator-specific heads on two datasets, we show that group-level entropy works generally well on both datasets. Importantly, it achieves performance in terms of both prediction and uncertainty estimation comparable to full-scale training from disagreement, while saving 70{\%} of the annotation budget.",
 }
 
+@inproceedings{litschko-etal-2025-cross,
+    title = "Cross-Dialect Information Retrieval: Information Access in Low-Resource and High-Variance Languages",
+    author = "Litschko, Robert  and
+      Kraus, Oliver  and
+      Blaschke, Verena  and
+      Plank, Barbara",
+    editor = "Rambow, Owen  and
+      Wanner, Leo  and
+      Apidianaki, Marianna  and
+      Al-Khalifa, Hend  and
+      Eugenio, Barbara Di  and
+      Schockaert, Steven",
+    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.coling-main.678/",
+    pages = "10158--10171",
+    abstract = "A large amount of local and culture-specific knowledge (e.g., people, traditions, food) can only be found in documents written in dialects. While there has been extensive research conducted on cross-lingual information retrieval (CLIR), the field of cross-dialect retrieval (CDIR) has received limited attention. Dialect retrieval poses unique challenges due to the limited availability of resources to train retrieval models and the high variability in non-standardized languages. We study these challenges on the example of German dialects and introduce the first German dialect retrieval dataset, dubbed WikiDIR, which consists of seven German dialects extracted from Wikipedia. Using WikiDIR, we demonstrate the weakness of lexical methods in dealing with high lexical variation in dialects. We further show that commonly used CLIR methods such as query translation or zero-shot cross-lingual transfer with multilingual encoders do not transfer well to extremely low-resource setups, motivating the need for resource-lean and dialect-specific retrieval models."
+}
+
+@inproceedings{munoz-ortiz-etal-2025-evaluating,
+    title = "Evaluating Pixel Language Models on Non-Standardized Languages",
+    author = "Mu{\~n}oz-Ortiz, Alberto  and
+      Blaschke, Verena  and
+      Plank, Barbara",
+    editor = "Rambow, Owen  and
+      Wanner, Leo  and
+      Apidianaki, Marianna  and
+      Al-Khalifa, Hend  and
+      Eugenio, Barbara Di  and
+      Schockaert, Steven",
+    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.coling-main.427/",
+    pages = "6412--6419",
+    abstract = "We explore the potential of pixel-based models for transfer learning from standard languages to dialects. These models convert text into images that are divided into patches, enabling a continuous vocabulary representation that proves especially useful for out-of-vocabulary words common in dialectal data. Using German as a case study, we compare the performance of pixel-based models to token-based models across various syntactic and semantic tasks. Our results show that pixel-based models outperform token-based models in part-of-speech tagging, dependency parsing and intent detection for zero-shot dialect evaluation by up to 26 percentage points in some scenarios, though not in Standard German. However, pixel-based models fall short in topic classification. These findings emphasize the potential of pixel-based models for handling dialectal data, though further research should be conducted to assess their effectiveness in various linguistic contexts."
+}
+
+@inproceedings{senger-etal-2025-karrierewege,
+    title = "{KARRIEREWEGE}: A large scale Career Path Prediction Dataset",
+    author = "Senger, Elena  and
+      Campbell, Yuri  and
+      van der Goot, Rob  and
+      Plank, Barbara",
+    editor = "Rambow, Owen  and
+      Wanner, Leo  and
+      Apidianaki, Marianna  and
+      Al-Khalifa, Hend  and
+      Eugenio, Barbara Di  and
+      Schockaert, Steven  and
+      Darwish, Kareem  and
+      Agarwal, Apoorv",
+    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics: Industry Track",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.coling-industry.46/",
+    pages = "533--545",
+    abstract = "Accurate career path prediction can support many stakeholders, like job seekers, recruiters, HR, and project managers. However, publicly available data and tools for career path prediction are scarce. In this work, we introduce Karrierewege, a comprehensive, publicly available dataset containing over 500k career paths, significantly surpassing the size of previously available datasets. We link the dataset to the ESCO taxonomy to offer a valuable resource for predicting career trajectories. To tackle the problem of free-text inputs typically found in resumes, we enhance it by synthesizing job titles and descriptions resulting in Karrierewege+. This allows for accurate predictions from unstructured data, closely aligning with practical application challenges. We benchmark existing state-of-the-art (SOTA) models on our dataset and a previous benchmark and see increased performance and robustness by synthesizing the data for the free-text use cases."
+}
+
+@inproceedings{blaschke-etal-2025-add,
+    title = "Add Noise, Tasks, or Layers? {M}ai{NLP} at the {V}ar{D}ial 2025 Shared Task on {N}orwegian Dialectal Slot and Intent Detection",
+    author = {Blaschke, Verena  and
+      K{\"o}rner, Felicia  and
+      Plank, Barbara},
+    editor = "Scherrer, Yves  and
+      Jauhiainen, Tommi  and
+      Ljube{\v{s}}i{\'c}, Nikola  and
+      Nakov, Preslav  and
+      Tiedemann, Jorg  and
+      Zampieri, Marcos",
+    booktitle = "Proceedings of the 12th Workshop on NLP for Similar Languages, Varieties and Dialects",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.vardial-1.14/",
+    pages = "182--199",
+    abstract = "Slot and intent detection (SID) is a classic natural language understanding task. Despite this, research has only more recently begun focusing on SID for dialectal and colloquial varieties. Many approaches for low-resource scenarios have not yet been applied to dialectal SID data, or compared to each other on the same datasets. We participate in the VarDial 2025 shared task on slot and intent detection in Norwegian varieties, and compare multiple set-ups: varying the training data (English, Norwegian, or dialectal Norwegian), injecting character-level noise, training on auxiliary tasks, and applying Layer Swapping, a technique in which layers of models fine-tuned on different datasets are assembled into a model. We find noise injection to be beneficial while the effects of auxiliary tasks are mixed. Though some experimentation was required to successfully assemble a model from layers, it worked surprisingly well; a combination of models trained on English and small amounts of dialectal data produced the most robust slot predictions. Our best models achieve 97.6{\%} intent accuracy and 85.6{\%} slot F1 in the shared task."
+}
+
+@inproceedings{kruckl-etal-2025-improving,
+    title = "Improving Dialectal Slot and Intent Detection with Auxiliary Tasks: A Multi-Dialectal {B}avarian Case Study",
+    author = {Kr{\"u}ckl, Xaver Maria  and
+      Blaschke, Verena  and
+      Plank, Barbara},
+    editor = "Scherrer, Yves  and
+      Jauhiainen, Tommi  and
+      Ljube{\v{s}}i{\'c}, Nikola  and
+      Nakov, Preslav  and
+      Tiedemann, Jorg  and
+      Zampieri, Marcos",
+    booktitle = "Proceedings of the 12th Workshop on NLP for Similar Languages, Varieties and Dialects",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.vardial-1.10/",
+    pages = "128--146",
+    abstract = "Reliable slot and intent detection (SID) is crucial in natural language understanding for applications like digital assistants. Encoder-only transformer models fine-tuned on high-resource languages generally perform well on SID. However, they struggle with dialectal data, where no standardized form exists and training data is scarce and costly to produce. We explore zero-shot transfer learning for SID, focusing on multiple Bavarian dialects, for which we release a new dataset for the Munich dialect. We evaluate models trained on auxiliary tasks in Bavarian, and compare joint multi-task learning with intermediate-task training. We also compare three types of auxiliary tasks: token-level syntactic tasks, named entity recognition (NER), and language modelling. We find that the included auxiliary tasks have a more positive effect on slot filling than intent classification (with NER having the most positive effect), and that intermediate-task training yields more consistent performance gains. Our best-performing approach improves intent classification performance on Bavarian dialects by 5.1 and slot filling F1 by 8.4 percentage points."
+}
+
 @inproceedings{peng-etal-2024-different,
     title = "Different Tastes of Entities: Investigating Human Label Variation in Named Entity Annotations",
     author = "Peng, Siyao  and
