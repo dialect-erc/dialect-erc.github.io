@@ -16,7 +16,7 @@ resources:
             - model
             - linguistic-variation
         huggingface: https://huggingface.co/amunozo/pixel-base-german
-        paper: https://aclanthology.org/2025.coling-main.678/
+        paper: https://aclanthology.org/2025.coling-main.427/
         description: |
                 A PIXEL model trained on German data.
     -   name: Eevee
