@@ -11,6 +11,14 @@ resources:
         paper: https://aclanthology.org/2025.coling-main.678/
         description: |
                 An information retrieval dataset for German dialects and regional languages, with dictionaries of spelling/lexical variations.
+    -   name: German PIXEL base
+        tags:
+            - model
+            - linguistic-variation
+        huggingface: https://huggingface.co/amunozo/pixel-base-german
+        paper: https://aclanthology.org/2025.coling-main.678/
+        description: |
+                A PIXEL model trained on German data.
     -   name: Eevee
         tags:
             - tool
@@ -78,6 +86,10 @@ resources:
                 <label for="dataset-checkbox" class="ms-2 pl-2 text-sm font-medium text-gray-900 ">Dataset</label>
             </div>
             <div class="flex items-center me-4">
+                <input onclick="filterResources('model')" id="model-checkbox" type="checkbox" value="" class="w-4 h-4 text-violet-700 focus:ring-0 focus:ring-offset-0 bg-gray-100 border-gray-300 rounded ">
+                <label for="model-checkbox" class="ms-2 pl-2 text-sm font-medium text-gray-900 ">Model</label>
+            </div>
+            <div class="flex items-center me-4">
                 <input onclick="filterResources('linguistic-variation')" id="linguistic-checkbox" type="checkbox" value="" class="w-4 h-4 text-sky-700 focus:ring-0 focus:ring-offset-0 bg-gray-100 border-gray-300 rounded ">
                 <label for="linguistic-checkbox" class="ms-2 pl-2 text-sm font-medium text-gray-900 ">Linguistic Variation</label>
             </div>
@@ -99,6 +111,8 @@ resources:
                         <span class="inline-block px-2 py-0.5 mr-2 bg-amber-300 text-amber-800 font-semibold rounded-full text-xs capitalize">{{ tag }}</span>
                         {% elsif tag == "dataset" %}
                         <span class="inline-block px-2 py-0.5 mr-2 bg-rose-300 text-rose-800 font-semibold rounded-full text-xs capitalize">{{ tag }}</span>
+                        {% elsif tag == "model" %}
+                        <span class="inline-block px-2 py-0.5 mr-2 bg-violet-300 text-violet-800 font-semibold rounded-full text-xs capitalize">{{ tag }}</span>
                         {% elsif tag == "linguistic-variation" %}
                         <span class="inline-block px-2 py-0.5 mr-2 bg-sky-300 text-sky-800 font-semibold rounded-full text-xs capitalize">{{ tag | replace: "-", " " }}</span>
                         {% elsif tag == "label-variation" %}
@@ -108,11 +122,25 @@ resources:
                         {% endif %}
                     {% endfor %}
                 </div>
+                {% if resource.github %}
                 <a href="{{ resource.github }}" target="_blank" rel="noreferrer" class="inline-block">
                     <div class="text-large py-1 font-bold text-heading hover:text-link">
                         {{ resource.name }}
                     </div>
                 </a>
+                {% elsif resource.huggingface %}
+                <a href="{{ resource.huggingface }}" target="_blank" rel="noreferrer" class="inline-block">
+                    <div class="text-large py-1 font-bold text-heading hover:text-link">
+                        {{ resource.name }}
+                    </div>
+                </a>
+                {% elsif resource.paper %}
+                <a href="{{ resource.paper }}" target="_blank" rel="noreferrer" class="inline-block">
+                    <div class="text-large py-1 font-bold text-heading hover:text-link">
+                        {{ resource.name }}
+                    </div>
+                </a>
+                {% endif %}
                 <div class="text-base text-mainText">
                 {{ resource.description }}
                 </div>
@@ -120,6 +148,12 @@ resources:
                     {% if resource.github %}
                     <a href="{{ resource.github }}" target="_blank" rel="noreferrer">
                         <i class="fab fa-github hover:text-link transition-transform transform hover:scale-110"></i>
+                    </a>
+                    {% endif %}
+                    {% if resource.huggingface %}
+                    <a href="{{ resource.huggingface }}" target="_blank" rel="noreferrer">
+                        <span style="font-size: smaller; font-weight: bolder;">HF</span>
+                        <!-- <span style="color:transparent; text-shadow: 0 0 0 rgb(51 65 85 / var(--tw-text-opacity));">🤗</span> -->
                     </a>
                     {% endif %}
                     {% if resource.paper %}

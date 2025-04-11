@@ -86,8 +86,9 @@ You can add up to 3 highlighted publications which will be shown at the top of t
 ## Adding Resources
 Go to _pages/resources.md and add a new entry at the beginning of the file. Following fields should be populated:
    - name
-   - tags (list of available tags: *tool*, *dataset*, *linguistic-variation*, *label-variation*)
+   - tags (list of available tags: *tool*, *dataset*, *mode;*, *linguistic-variation*, *label-variation*)
    - github (link to GitHub page of the resource. Should always be populated as it is used as the destination for the resource's title link.)
+   - huggingdace (link to HuggingFace page)
    - paper (link to paper. If no paper has been published yet, don't include this)
    - description
 
