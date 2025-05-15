@@ -3,28 +3,18 @@ layout: page
 title: Talks
 permalink: /talks/
 talks:
-  - title: Human-facing Natural Language Processing
-    event: Keynote talk at Danish Digitalization, Data Science and AI (D3A) conference
+  - title: "Beyond “noisy” text: How (and why) to process dialect data"
+    event: Keynote presentation at WNUT @ NAACL
+    speaker: Verena Blaschke
+    date: 2025-05-03
+    location: Albuquerque, USA
+  - title: Are LLMs Widening or Narrowing Our Horizon? Let's Embrace Variation for Trustworthy NLP
+    event: Keynote presentation at ACL 2024
     speaker: Prof. Barbara Plank
-    link: https://d3aconference.dk/d3a-1-0/
-    date: 2024-02-02
-    location: Nyborg, Denmark
-  - title: Human-centric Natural Language Processing
-    event: Keynote talk at Conference and Labs of the Evaluation Forum (CLEF)
-    speaker: Prof. Barbara Plank
-    location: Thessaloniki, Greece
-    date: 2023-08-18
-  - title: From Human Label Variation and Model Uncertainty to Error Detection (and Back)
-    event: Keynote talk at NLPerspectives workshop at LREC-COLING
-    speaker: Prof. Barbara Plank
-    location: Turin, Italy
-    date: 2024-05-21
-  - title: Natural Language Processing for Non-standard Language Varieties
-    event: Keynote talk at Text+ conference 2024
-    speaker: Prof. Barbara Plank
-    date: 2024-06-28
-    location: Munich, Germany
-    image: text-plus-logo.svg
+    date: 2024-08-14
+    image: acl-logo.png
+    location: Bangkok, Thailand
+    link: https://2024.aclweb.org/program/keynotes/#barbara-plank
   - title: Munich AI Day 2024
     event: Panel discussion
     speaker: Prof. Barbara Plank
@@ -32,13 +22,28 @@ talks:
     image: MCML_Logo_cropped.jpg
     location: Munich, Germany
     link: https://mcml.ai/events/2024-07-04-munich-ai-day/
-  - title: Are LLMs Widening or Narrowing Our Horizon? Let's Embrace Variation for Trustworthy NLP
-    event: Keynote presentation at ACL 2024
+  - title: Human-facing Natural Language Processing
+    event: Keynote talk at Danish Digitalization, Data Science and AI (D3A) conference
     speaker: Prof. Barbara Plank
-    date: 2024-07-04
-    image: acl-logo.png
-    location: Bangkok, Thailand
-    link: https://2024.aclweb.org/program/keynotes/#barbara-plank
+    link: https://d3aconference.dk/d3a-1-0/
+    date: 2024-02-02
+    location: Nyborg, Denmark
+  - title: Natural Language Processing for Non-standard Language Varieties
+    event: Keynote talk at Text+ conference 2024
+    speaker: Prof. Barbara Plank
+    date: 2024-06-28
+    location: Munich, Germany
+    image: text-plus-logo.svg
+  - title: From Human Label Variation and Model Uncertainty to Error Detection (and Back)
+    event: Keynote talk at NLPerspectives workshop at LREC-COLING
+    speaker: Prof. Barbara Plank
+    location: Turin, Italy
+    date: 2024-05-21
+  - title: Human-centric Natural Language Processing
+    event: Keynote talk at Conference and Labs of the Evaluation Forum (CLEF)
+    speaker: Prof. Barbara Plank
+    location: Thessaloniki, Greece
+    date: 2023-08-18
 ---
 
 <div>
