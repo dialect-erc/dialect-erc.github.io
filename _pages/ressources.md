@@ -3,6 +3,14 @@ layout: page
 title: Resources
 permalink: /resources/
 resources:
+    -   name: Betthupferl
+        tags:
+            - dataset
+            - linguistic-variation
+        github: https://github.com/mainlp/betthupferl
+        paper: [https://aclanthology.org/2025.coling-main.678/](https://www.isca-archive.org/interspeech_2025/blaschke25_interspeech.html)
+        description: |
+                A dataset for evaluating ASR models on Bavarian, Franconian, Swabian, and Standad German (dialectal and standardized reference transcriptions).
     -   name: WikiDIR
         tags:
             - dataset
