@@ -14,11 +14,6 @@ team:
     position: Postdoc
     picture: logan.jpeg
     website: https://logan-siyao-peng.github.io/
-  - name: Yang Janet Liu
-    affiliation: LMU Munich
-    position: Postdoc
-    picture: janet.png
-    website: https://janetlauyeung.github.io/
   - name: Xinpeng Wang
     affiliation: LMU Munich
     position: PhD student
@@ -39,22 +34,6 @@ team:
     position: PhD student
     picture: felicia.JPG
     website: https://koernerfelicia.github.io/
-  - name: Sebastian Loftus
-    affiliation: LMU Munich
-    position: Student assistant
-    picture: sebastian.jpg
-  - name: Chengzhi Hu
-    affiliation: LMU Munich
-    position: Student assistant
-    picture: chengzhi.png
-  - name: Miriam Winkler
-    affiliation: LMU Munich
-    position: Student assistant
-    picture: miriam.jpg
-  - name: Huangyan Shan
-    affiliation: LMU Munich
-    position: Student assistant
-    picture: huangyan.jpg
 ---
 
 <!-- This code inserts all team members. To add a team member, edit the team list above-->
