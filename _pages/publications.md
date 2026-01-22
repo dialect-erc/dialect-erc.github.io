@@ -31,49 +31,20 @@ permalink: /publications/
 </div>
 
 
-<!-- Show more items when the button is clicked-->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const publicationContainer = document.getElementById('publication-container');
-    const showMoreBtn = document.getElementById('show-more-btn');
-    const items = document.querySelectorAll("#publication-item");
-    
-    let numItemsToShow = 10; // Number of items to reveal each time
-    if (showMoreBtn && publicationContainer) {
-        function showMoreItems() {
-        let hiddenItems = publicationContainer.querySelectorAll('.hidden');
-        let totalHiddenItems = hiddenItems.length;
-
-        const itemsToReveal = Math.min(numItemsToShow, totalHiddenItems);
-        for (let i = 0; i < itemsToReveal; i++) {
-            hiddenItems[i].classList.remove('hidden');
-        }
-        totalHiddenItems -= numItemsToShow
-        // Hide the "Show More" button if all items are revealed
-        if (totalHiddenItems <= 0) {
-            showMoreBtn.style.display = 'none';
-        }
-    }
-    showMoreBtn.addEventListener('click', showMoreItems);
-    // click once on page load
-    showMoreItems();
-    // show button only after initial items have been displayed
-    if (numItemsToShow < items.length) {
-      showMoreBtn.classList.remove('hidden')
-    }
-  }
-});
-</script>
-
-
 <h2 class="text-2xl text-secondary-600 font-semibold pt-24 pb-12">
   Preprints
 </h2>
 ography --file preprints --template bib %}
 </div>
 
+<div id="show-more-preprints-container">
+  <button class="bg-primary-500 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hidden"
+          id="show-more-preprints-btn">
+    Show More
+  </button>
+</div>
 
-<!-- Show more items when the button is clicked
+<!-- Show more items when the button is clicked -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -114,4 +85,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 </script>
--->
