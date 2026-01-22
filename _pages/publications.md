@@ -36,7 +36,7 @@ permalink: /publications/
 
 <!-- Preprints -->
 <h2 class="text-2xl text-secondary-600 font-semibold pt-24 pb-12">Preprints</h2>
-<div id="preprint-container" class="pb-24">
+<div id="preprint-container">
   {% bibliography --file preprints --template bib %}
 </div>
 
