@@ -1,6 +1,356 @@
 ---
 ---
 
+@inproceedings{testoni-etal-2025-racquet,
+    title = "{RA}c{QUE}t: Unveiling the Dangers of Overlooked Referential Ambiguity in Visual {LLM}s",
+    author = "Testoni, Alberto  and
+      Plank, Barbara  and
+      Fern{\'a}ndez, Raquel",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.1206/",
+    doi = "10.18653/v1/2025.emnlp-main.1206",
+    pages = "23627--23647",
+    ISBN = "979-8-89176-332-6",
+    abstract = "Ambiguity resolution is key to effective communication. While humans effortlessly address ambiguity through conversational grounding strategies, the extent to which current language models can emulate these strategies remains unclear. In this work, we examine referential ambiguity in image-based question answering by introducing RAcQUEt, a carefully curated dataset targeting distinct aspects of ambiguity. Through a series of evaluations, we reveal significant limitations and problems of overconfidence of state-of-the-art large multimodal language models in addressing ambiguity in their responses. The overconfidence issue becomes particularly relevant for RAcQUEt-BIAS, a subset designed to analyze a critical yet underexplored problem: failing to address ambiguity leads to stereotypical, socially biased responses. Our results underscore the urgency of equipping models with robust strategies to deal with uncertainty without resorting to undesirable stereotypes."
+}
+
+@inproceedings{alacam-etal-2025-disentangling,
+    title = "Disentangling Subjectivity and Uncertainty for Hate Speech Annotation and Modeling using Gaze",
+    author = {Alacam, {\"O}zge  and
+      Hoeken, Sanne  and
+      S{\"a}uberli, Andreas  and
+      Gr{\"o}ner, Hannes  and
+      Frassinelli, Diego  and
+      Zarrie{\ss}, Sina  and
+      Plank, Barbara},
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.1460/",
+    doi = "10.18653/v1/2025.emnlp-main.1460",
+    pages = "28707--28724",
+    ISBN = "979-8-89176-332-6",
+    abstract = "Variation is inherent in opinion-based annotation tasks like sentiment or hate speech analysis. It does not only arise from errors, fatigue, or sentence ambiguity but also from genuine differences in opinion shaped by background, experience, and culture. In this paper, first, we show how annotators' confidence ratings can be great use for disentangling subjective variation from uncertainty, without relying on specific features present in the data (text, gaze, etc.). Our goal is to establish distinctive dimensions of variation which are often not clearly separated in existing work on modeling annotator variation. We illustrate our approach through a hate speech detection task, demonstrating that models are affected differently by instances of uncertainty and subjectivity. In addition, we show that human gaze patterns offer valuable indicators of subjective evaluation and uncertainty. Disclaimer: This paper contains sentences that may be offensive."
+}
+
+@inproceedings{bertolazzi-etal-2025-validation,
+    title = "The Validation Gap: A Mechanistic Analysis of How Language Models Compute Arithmetic but Fail to Validate It",
+    author = "Bertolazzi, Leonardo  and
+      Mondorf, Philipp  and
+      Plank, Barbara  and
+      Bernardi, Raffaella",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.1495/",
+    doi = "10.18653/v1/2025.emnlp-main.1495",
+    pages = "29387--29424",
+    ISBN = "979-8-89176-332-6",
+    abstract = "The ability of large language models (LLMs) to validate their output and identify potential errors is crucial for ensuring robustness and reliability. However, current research indicates that LLMs struggle with self-correction, encountering significant challenges in detecting errors. While studies have explored methods to enhance self-correction in LLMs, relatively little attention has been given to understanding the models' internal mechanisms underlying error detection. In this paper, we present a mechanistic analysis of error detection in LLMs, focusing on simple arithmetic problems. Through circuit analysis, we identify the computational subgraphs responsible for detecting arithmetic errors across four smaller-sized LLMs. Our findings reveal that all models heavily rely on $\textit{consistency heads}\textemdash{}$attention heads that assess surface-level alignment of numerical values in arithmetic solutions. Moreover, we observe that the models' internal arithmetic computation primarily occurs in higher layers, whereas validation takes place in middle layers, before the final arithmetic results are fully encoded. This structural dissociation between arithmetic computation and validation seems to explain why smaller-sized LLMs struggle to detect even simple arithmetic errors."
+}
+
+@inproceedings{chen-etal-2025-threading,
+    title = "Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation",
+    author = "Chen, Beiduo  and
+      Liu, Yang Janet  and
+      Korhonen, Anna  and
+      Plank, Barbara",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.1682/",
+    doi = "10.18653/v1/2025.emnlp-main.1682",
+    pages = "33111--33135",
+    ISBN = "979-8-89176-332-6",
+    abstract = "The recent rise of reasoning-tuned Large Language Models (LLMs){---}which generate chains of thought (CoTs) before giving the final answer{---}has attracted significant attention and offers new opportunities for gaining insights into human label variation, which refers to plausible differences in how multiple annotators label the same data instance.Prior work has shown that LLM-generated explanations can help align model predictions with human label distributions, but typically adopt a *reverse* paradigm: producing explanations based on given answers. In contrast, CoTs provide a *forward* reasoning path that may implicitly embed rationales for each answer option, before generating the answers. We thus propose a novel LLM-based pipeline enriched with linguistically-grounded discourse segmenters to extract supporting and opposing statements for each answer option from CoTs with improved accuracy. We also propose a rank-based HLV evaluation framework that prioritizes the ranking of answers over exact scores, which instead favor direct comparison of label distributions.Our method outperforms a direct generation method as well as baselines on three datasets, and shows better alignment of ranking methods with humans, highlighting the effectiveness of our approach."
+}
+
+@inproceedings{hong-etal-2025-litex,
+    title = "{L}i{TE}x: A Linguistic Taxonomy of Explanations for Understanding Within-Label Variation in Natural Language Inference",
+    author = "Hong, Pingjun  and
+      Chen, Beiduo  and
+      Peng, Siyao  and
+      de Marneffe, Marie-Catherine  and
+      Plank, Barbara",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.1728/",
+    doi = "10.18653/v1/2025.emnlp-main.1728",
+    pages = "34065--34085",
+    ISBN = "979-8-89176-332-6",
+    abstract = "There is increasing evidence of Human Label Variation (HLV) in Natural Language Inference (NLI), where annotators assign different labels to the same premise-hypothesis pair. However, *within-label variation* {---} cases where annotators agree on the same label but provide divergent reasoning {---} poses an additional and mostly overlooked challenge. Several NLI datasets contain highlighted words in the NLI item as explanations, but the same spans on the NLI item can be highlighted for different reasons, as evidenced by free-text explanations, which offer a window into annotators' reasoning. To systematically understand this problem and gain insight into the rationales behind NLI labels, we introduce LiTEx, a linguistically-informed taxonomy for categorizing free-text explanations in English. Using this taxonomy, we annotate a subset of the e-SNLI dataset, validate the taxonomy{'}s reliability, and analyze how it aligns with NLI labels, highlights, and explanations. We further assess the taxonomy{'}s usefulness in explanation generation, demonstrating that conditioning generation on LiTEx yields explanations that are linguistically closer to human explanations than those generated using only labels or highlights. Our approach thus not only captures within-label variation but also shows how taxonomy-guided generation for reasoning can bridge the gap between human and model explanations more effectively than existing strategies."
+}
+
+@inproceedings{mao-etal-2025-relevant,
+    title = "Relevant for the Right Reasons? Investigating Lexical Biases in Zero-Shot and Instruction-Tuned Rerankers",
+    author = "Mao, Yuchen  and
+      Plank, Barbara  and
+      Litschko, Robert",
+    editor = "Adelani, David Ifeoluwa  and
+      Arnett, Catherine  and
+      Ataman, Duygu  and
+      Chang, Tyler A.  and
+      Gonen, Hila  and
+      Raja, Rahul  and
+      Schmidt, Fabian  and
+      Stap, David  and
+      Wang, Jiayi",
+    booktitle = "Proceedings of the 5th Workshop on Multilingual Representation Learning (MRL 2025)",
+    month = nov,
+    year = "2025",
+    address = "Suzhuo, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.mrl-main.31/",
+    doi = "10.18653/v1/2025.mrl-main.31",
+    pages = "468--482",
+    ISBN = "979-8-89176-345-6",
+    abstract = "Large Language Models (LLMs) show strong potential for reranking documents in information retrieval (IR), but training with monolingual data often leads to monolingual overfitting and lexical bias, limiting generalization in cross-lingual IR (CLIR). To overcome these issues, we investigate instruction-tuning LLaMA-3.1-8B-Instruct on English and multilingual code-switched data, and evaluate on mMARCO and XQuAD-R. Results show that instruction-tuning on code-switched data substantially improves CLIR performance, while monolingual tuning remains more effective for monolingual reranking. We introduce a novel measure to analyze the relationship between lexical overlap and reranking performance, showing that the two factors are correlated. We finally conduct a causal analysis using counterfactual examples, where we evaluate whether rewriting passages that share overlapping keywords with the query causes models to change their relevance predictions. Overall, we find that code-switching serves as an effective and lightweight strategy to improve cross-lingual generalization in LLM-based re-ranking, while our analyses show that lexical overlap remains a major factor that can mislead reranking models."
+}
+
+@inproceedings{eckman-etal-2025-aligning,
+    title = "Aligning {NLP} Models with Target Population Perspectives using {PAIR}: Population-Aligned Instance Replication",
+    author = "Eckman, Stephanie  and
+      Ma, Bolei  and
+      Kern, Christoph  and
+      Chew, Rob  and
+      Plank, Barbara  and
+      Kreuter, Frauke",
+    editor = "Abercrombie, Gavin  and
+      Basile, Valerio  and
+      Frenda, Simona  and
+      Tonelli, Sara  and
+      Dudy, Shiran",
+    booktitle = "Proceedings of the The 4th Workshop on Perspectivist Approaches to NLP",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.nlperspectives-1.9/",
+    doi = "10.18653/v1/2025.nlperspectives-1.9",
+    pages = "100--110",
+    ISBN = "979-8-89176-350-0",
+    abstract = "Models trained on crowdsourced annotations may not reflect population views, if those who work as annotators do not represent the broader population. In this paper, we propose PAIR: Population-Aligned Instance Replication, a post-processing method that adjusts training data to better reflect target population characteristics without collecting additional annotations. Using simulation studies on offensive language and hate speech detection with varying annotator compositions, we show that non-representative pools degrade model calibration while leaving accuracy largely unchanged. PAIR corrects these calibration problems by replicating annotations from underrepresented annotator groups to match population proportions. We conclude with recommendations for improving the representativity of training data and model performance."
+}
+
+@inproceedings{leonardelli-etal-2025-lewidi,
+    title = "{L}e{W}i{D}i-2025 at {NLP}erspectives: Third Edition of the Learning with Disagreements Shared Task",
+    author = "Leonardelli, Elisa  and
+      Casola, Silvia  and
+      Peng, Siyao  and
+      Rizzi, Giulia  and
+      Basile, Valerio  and
+      Fersini, Elisabetta  and
+      Frassinelli, Diego  and
+      Jang, Hyewon  and
+      Pavlovic, Maja  and
+      Plank, Barbara  and
+      Poesio, Massimo",
+    editor = "Abercrombie, Gavin  and
+      Basile, Valerio  and
+      Frenda, Simona  and
+      Tonelli, Sara  and
+      Dudy, Shiran",
+    booktitle = "Proceedings of the The 4th Workshop on Perspectivist Approaches to NLP",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.nlperspectives-1.16/",
+    doi = "10.18653/v1/2025.nlperspectives-1.16",
+    pages = "182--195",
+    ISBN = "979-8-89176-350-0",
+    abstract = "Many researchers have reached the conclusion that ai models should be trained to be aware of the possibility of variation and disagreement in human judgments, and evaluated as per their ability to recognize such variation. The LeWiDi series of shared tasks on Learning With Disagreements was established to promote this approach to training and evaluating ai models, by making suitable datasets more accessible and by developing evaluation methods. The third edition of the task builds on this goal by extending the LeWiDi benchmark to four datasets spanning paraphrase identification, irony detection, sarcasm detection, and natural language inference, with labeling schemes that include not only categorical judgments as in previous editions, but ordinal judgments as well. Another novelty is that we adopt two complementary paradigms to evaluate disagreement-aware systems: the soft-label approach, in which models predict population-level distributions of judgments, and the perspectivist approach, in which models predict the interpretations of individual annotators. Crucially, we moved beyond standard metrics such as cross-entropy, and tested new evaluation metrics for the two paradigms. The task attracted diverse participation, and the results provide insights into the strengths and limitations of methods to modeling variation. Together, these contributions strengthen LeWiDi as a framework and provide new resources, benchmarks, and findings to support the development of disagreement-aware technologies."
+}
+
+@inproceedings{liu-etal-2025-tracing,
+    title = "Tracing Multilingual Factual Knowledge Acquisition in Pretraining",
+    author = {Liu, Yihong  and
+      Wang, Mingyang  and
+      Kargaran, Amir Hossein  and
+      K{\"o}rner, Felicia  and
+      Nie, Ercong  and
+      Plank, Barbara  and
+      Yvon, Fran{\c{c}}ois  and
+      Schuetze, Hinrich},
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.113/",
+    doi = "10.18653/v1/2025.findings-emnlp.113",
+    pages = "2121--2146",
+    ISBN = "979-8-89176-335-7",
+    abstract = "Large Language Models (LLMs) are capable of recalling multilingual factual knowledge present in their pretraining data. However, most studies evaluate only the final model, leaving the development of factual recall and crosslingual consistency throughout pretraining largely unexplored. In this work, we trace how factual recall and crosslingual consistency evolve during pretraining, focusing on OLMo-7B as a case study. We find that both accuracy and consistency improve over time for most languages. We show that this improvement is primarily driven by the fact frequency in the pretraining corpus: more frequent facts are more likely to be recalled correctly, regardless of language. Yet, some low-frequency facts in non-English languages can still be correctly recalled. Our analysis reveals that these instances largely benefit from crosslingual transfer of their English counterparts {--} an effect that emerges predominantly in the early stages of pretraining. We pinpoint two distinct pathways through which multilingual factual knowledge acquisition occurs: (1) frequency-driven learning, which is dominant and language-agnostic, and (2) crosslingual transfer, which is limited in scale and typically constrained to relation types involving named entities. We release our code and data to facilitate further research at \url{https://github.com/cisnlp/multilingual-fact-tracing}."
+}
+
+@inproceedings{du-etal-2025-reason,
+    title = "Reason to Rote: Rethinking Memorization in Reasoning",
+    author = "Du, Yupei  and
+      Mondorf, Philipp  and
+      Casola, Silvia  and
+      Yao, Yuekun  and
+      Litschko, Robert  and
+      Plank, Barbara",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.437/",
+    doi = "10.18653/v1/2025.emnlp-main.437",
+    pages = "8659--8679",
+    ISBN = "979-8-89176-332-6",
+    abstract = "Large language models readily memorize arbitrary training instances, such as label noise, yet they perform strikingly well on reasoning tasks. In this work, we investigate how language models memorize label noise, and why such memorization in many cases does not heavily affect generalizable reasoning capabilities. Using two controllable synthetic reasoning tasks with noisy labels, four-digit addition (FDA) and two-hop relational reasoning (THR), we discover a reliance of memorization on generalizable reasoning mechanisms: models continue to compute intermediate reasoning outputs even when retrieving memorized noisy labels, and intervening reasoning adversely affects memorization. We further show that memorization operates through distributed encoding, i.e., aggregating various inputs and intermediate results, rather than building a look-up mechanism from inputs to noisy labels. Moreover, our FDA case study reveals memorization occurs via outlier heuristics, where existing neuron activation patterns are slightly shifted to fit noisy labels. Together, our findings suggest that memorization of label noise in language models builds on, rather than overrides, the underlying reasoning mechanisms, shedding lights on the intriguing phenomenon of benign memorization."
+}
+
+@inproceedings{wu-etal-2025-absa,
+    title = "{M}-{ABSA}: A Multilingual Dataset for Aspect-Based Sentiment Analysis",
+    author = "Wu, ChengYan  and
+      Ma, Bolei  and
+      Liu, Yihong  and
+      Zhang, Zheyu  and
+      Deng, Ningyuan  and
+      Li, Yanshu  and
+      Chen, Baolan  and
+      Zhang, Yi  and
+      Xue, Yun  and
+      Plank, Barbara",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.128/",
+    doi = "10.18653/v1/2025.emnlp-main.128",
+    pages = "2530--2557",
+    ISBN = "979-8-89176-332-6",
+    abstract = "Aspect-based sentiment analysis (ABSA) is a crucial task in information extraction and sentiment analysis, aiming to identify aspects with associated sentiment elements in text. However, existing ABSA datasets are predominantly English-centric, limiting the scope for multilingual evaluation and research. To bridge this gap, we present M-ABSA, a comprehensive dataset spanning 7 domains and 21 languages, making it the most extensive multilingual parallel dataset for ABSA to date. Our primary focus is on triplet extraction, which involves identifying aspect terms, aspect categories, and sentiment polarities. The dataset is constructed through an automatic translation process with human review to ensure quality. We perform extensive experiments using various baselines to assess performance and compatibility on M-ABSA. Our empirical findings highlight that the dataset enables diverse evaluation tasks, such as multilingual and multi-domain transfer learning, and large language model evaluation, underscoring its inclusivity and its potential to drive advancements in multilingual ABSA research."
+}
+
+@inproceedings{eckman-etal-2025-aligning,
+    title = "Aligning {NLP} Models with Target Population Perspectives using {PAIR}: Population-Aligned Instance Replication",
+    author = "Eckman, Stephanie  and
+      Ma, Bolei  and
+      Kern, Christoph  and
+      Chew, Rob  and
+      Plank, Barbara  and
+      Kreuter, Frauke",
+    editor = "Abercrombie, Gavin  and
+      Basile, Valerio  and
+      Frenda, Simona  and
+      Tonelli, Sara  and
+      Dudy, Shiran",
+    booktitle = "Proceedings of the The 4th Workshop on Perspectivist Approaches to NLP",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.nlperspectives-1.9/",
+    doi = "10.18653/v1/2025.nlperspectives-1.9",
+    pages = "100--110",
+    ISBN = "979-8-89176-350-0",
+    abstract = "Models trained on crowdsourced annotations may not reflect population views, if those who work as annotators do not represent the broader population. In this paper, we propose PAIR: Population-Aligned Instance Replication, a post-processing method that adjusts training data to better reflect target population characteristics without collecting additional annotations. Using simulation studies on offensive language and hate speech detection with varying annotator compositions, we show that non-representative pools degrade model calibration while leaving accuracy largely unchanged. PAIR corrects these calibration problems by replicating annotations from underrepresented annotator groups to match population proportions. We conclude with recommendations for improving the representativity of training data and model performance."
+}
+
+@inproceedings{mondorf-etal-2025-blackboxnlp,
+    title = "{B}lackbox{NLP}-2025 {MIB} Shared Task: Exploring Ensemble Strategies for Circuit Localization Methods",
+    author = "Mondorf, Philipp  and
+      Wang, Mingyang  and
+      Gerstner, Sebastian  and
+      Hakimi, Ahmad Dawar  and
+      Liu, Yihong  and
+      Veloso, Leonor  and
+      Zhou, Shijia  and
+      Schuetze, Hinrich  and
+      Plank, Barbara",
+    editor = "Belinkov, Yonatan  and
+      Mueller, Aaron  and
+      Kim, Najoung  and
+      Mohebbi, Hosein  and
+      Chen, Hanjie  and
+      Arad, Dana  and
+      Sarti, Gabriele",
+    booktitle = "Proceedings of the 8th BlackboxNLP Workshop: Analyzing and Interpreting Neural Networks for NLP",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.blackboxnlp-1.31/",
+    doi = "10.18653/v1/2025.blackboxnlp-1.31",
+    pages = "537--542",
+    ISBN = "979-8-89176-346-3",
+    abstract = "The Circuit Localization track of the Mechanistic Interpretability Benchmark (MIB) evaluates methods for localizing circuits within large language models (LLMs), i.e., subnetworks responsible for specific task behaviors. In this work, we investigate whether ensembling two or more circuit localization methods can improve performance. We explore two variants: parallel and sequential ensembling. In parallel ensembling, we combine attribution scores assigned to each edge by different methods{---}e.g., by averaging or taking the minimum or maximum value. In the sequential ensemble, we use edge attribution scores obtained via EAP-IG as a warm start for a more expensive but more precise circuit identification method, namely edge pruning. We observe that both approaches yield notable gains on the benchmark metrics, leading to a more precise circuit identification approach. Finally, we find that taking a parallel ensemble over various methods, including the sequential ensemble, achieves the best results. We evaluate our approach in the BlackboxNLP 2025 MIB Shared Task, comparing ensemble scores to official baselines across multiple model{--}task combinations."
+}
+
+@inproceedings{litschko-etal-2025-make,
+    title = "Make Every Letter Count: Building Dialect Variation Dictionaries from Monolingual Corpora",
+    author = "Litschko, Robert  and
+      Blaschke, Verena  and
+      Burkhardt, Diana  and
+      Plank, Barbara  and
+      Frassinelli, Diego",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-emnlp.762/",
+    doi = "10.18653/v1/2025.findings-emnlp.762",
+    pages = "14157--14174",
+    ISBN = "979-8-89176-335-7",
+    abstract = "Dialects exhibit a substantial degree of variation due to the lack of a standard orthography. At the same time, the ability of Large Language Models (LLMs) to process dialects remains largely understudied. To address this gap, we use Bavarian as a case study and investigate the lexical dialect understanding capability of LLMs by examining how well they recognize and translate dialectal terms across different parts-of-speech. To this end, we introduce DiaLemma, a novel annotation framework for creating dialect variation dictionaries from monolingual data only, and use it to compile a ground truth dataset consisting of 100K human-annotated German-Bavarian word pairs. We evaluate how well nine state-of-the-art LLMs can judge Bavarian terms as dialect translations, inflected variants, or unrelated forms of a given German lemma. Our results show that LLMs perform best on nouns and lexically similar word pairs, and struggle most in distinguishing between direct translations and inflected variants. Interestingly, providing additional context in the form of example usages improves the translation performance, but reduces their ability to recognize dialect variants. This study highlights the limitations of LLMs in dealing with orthographic dialect variation and emphasizes the need for future work on adapting LLMs to dialects."
+}
+
 @inproceedings{blaschke-etal-2025-multi,
       title={A Multi-Dialectal Dataset for {German} Dialect {ASR} and Dialect-to-Standard Speech Translation},
       author={Blaschke, Verena and Winkler, Miriam and Förster, Constantin and Wenger-Glemser, Gabriele and Plank, Barbara},
