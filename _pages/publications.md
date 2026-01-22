@@ -25,11 +25,14 @@ permalink: /publications/
 
 <!-- "Show More" button -->
 <div id="show-more-container">
-    <button class="bg-primary-500 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hidden" id="show-more-btn">
-  Show More
-</button>
+  <button
+    class="bg-primary-500 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hidden"
+    id="show-more-btn"
+    type="button"
+  >
+    Show More
+  </button>
 </div>
-
 
 <!-- Preprints -->
 <h2 class="text-2xl text-secondary-600 font-semibold pt-24 pb-12">Preprints</h2>
@@ -38,42 +41,53 @@ permalink: /publications/
 </div>
 
 <div id="show-more-preprints-container">
-  <button class="bg-primary-500 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hidden"id="show-more-preprints-btn">
+  <button
+    class="bg-primary-500 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hidden"
+    id="show-more-preprints-btn"
+    type="button"
+  >
     Show More
   </button>
 </div>
 
 <!-- Show more items when the button is clicked -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
-  function setupShowMore(containerId, buttonId, numItemsToShow = 10) {
+  function setupShowMore(containerId, buttonId, numItemsToShow) {
     const container = document.getElementById(containerId);
     const button = document.getElementById(buttonId);
     if (!container || !button) return;
 
-    const items = container.querySelectorAll("#publication-item");
+    let items = Array.from(container.querySelectorAll('#publication-item'));
+    if (items.length === 0) {
+      items = Array.from(container.querySelectorAll('li'));
+    }
 
-    function showMoreItems() {
-      const hiddenItems = container.querySelectorAll('.hidden');
-      const totalHiddenItems = hiddenItems.length;
-      const itemsToReveal = Math.min(numItemsToShow, totalHiddenItems);
+    if (items.length <= numItemsToShow) {
+      button.classList.add('hidden');
+      return;
+    }
 
-      for (let i = 0; i < itemsToReveal; i++) {
+    items.forEach((item, idx) => {
+      if (idx >= numItemsToShow) item.classList.add('hidden');
+      else item.classList.remove('hidden');
+    });
+
+    button.classList.remove('hidden');
+
+    button.addEventListener('click', function () {
+      const hiddenItems = items.filter(it => it.classList.contains('hidden'));
+      const toReveal = Math.min(numItemsToShow, hiddenItems.length);
+
+      for (let i = 0; i < toReveal; i++) {
         hiddenItems[i].classList.remove('hidden');
       }
 
-      if (container.querySelectorAll('.hidden').length === 0) {
-        button.style.display = 'none';
+      if (items.every(it => !it.classList.contains('hidden'))) {
+        button.classList.add('hidden');
       }
-    }
-
-    button.addEventListener('click', showMoreItems);
-    showMoreItems();
-
-    if (items.length > numItemsToShow) {
-      button.classList.remove('hidden');
-    }
+    });
   }
 
   // All Publications
@@ -81,6 +95,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Preprints
   setupShowMore('preprint-container', 'show-more-preprints-btn', 10);
-
 });
 </script>
