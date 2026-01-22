@@ -38,8 +38,7 @@ permalink: /publications/
 </div>
 
 <div id="show-more-preprints-container">
-  <button class="bg-primary-500 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hidden"
-          id="show-more-preprints-btn">
+  <button class="bg-primary-500 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hidden"id="show-more-preprints-btn">
     Show More
   </button>
 </div>
