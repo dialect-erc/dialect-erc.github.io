@@ -31,7 +31,7 @@ permalink: /publications/
 </div>
 
 
-<!-- Show more items when the button is clicked -->
+<!-- Show more items when the button is clicked
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const publicationContainer = document.getElementById('publication-container');
@@ -64,3 +64,60 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
+-->
+
+<h2 class="text-2xl text-secondary-600 font-semibold pb-12">Preprints</h2>
+<div id="preprint-container" class="pb-24">
+  {% bibliography --file preprints --template bib %}
+</div>
+
+<!-- "Show More" button -->
+<div id="show-more-preprints-container">
+    <button class="bg-primary-500 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hidden" id="show-more-preprints-btn">
+  Show More
+</button>
+</div>
+
+
+<!-- Show more items when the button is clicked -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  function setupShowMore(containerId, buttonId, numItemsToShow = 10) {
+    const container = document.getElementById(containerId);
+    const button = document.getElementById(buttonId);
+    if (!container || !button) return;
+
+    const items = container.querySelectorAll("#publication-item");
+
+    function showMoreItems() {
+      const hiddenItems = container.querySelectorAll('.hidden');
+      const totalHiddenItems = hiddenItems.length;
+      const itemsToReveal = Math.min(numItemsToShow, totalHiddenItems);
+
+      for (let i = 0; i < itemsToReveal; i++) {
+        hiddenItems[i].classList.remove('hidden');
+      }
+
+      if (container.querySelectorAll('.hidden').length === 0) {
+        button.style.display = 'none';
+      }
+    }
+
+    button.addEventListener('click', showMoreItems);
+    showMoreItems();
+
+    if (items.length > numItemsToShow) {
+      button.classList.remove('hidden');
+    }
+  }
+
+  // All Publications
+  setupShowMore('publication-container', 'show-more-btn', 10);
+
+  // Preprints
+  setupShowMore('preprint-container', 'show-more-preprints-btn', 10);
+
+});
+</script>
+
