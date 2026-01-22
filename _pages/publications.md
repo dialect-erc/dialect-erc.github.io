@@ -31,7 +31,7 @@ permalink: /publications/
 </div>
 
 
-<!-- Show more items when the button is clicked
+<!-- Show more items when the button is clicked-->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const publicationContainer = document.getElementById('publication-container');
@@ -64,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
--->
 
 
 <h2 class="text-2xl text-secondary-600 font-semibold pb-12">Preprints</h2>
@@ -73,15 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 
-<!-- "Show More" button -->
-<div id="show-more-preprints-container">
-    <button class="bg-primary-500 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hidden" id="show-more-preprints-btn">
-  Show More
-</button>
-</div>
-
-
-<!-- Show more items when the button is clicked -->
+<!-- Show more items when the button is clicked
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -122,4 +113,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 </script>
-
+-->
