@@ -140,31 +140,6 @@
     abstract = "Large Language Models (LLMs) show strong potential for reranking documents in information retrieval (IR), but training with monolingual data often leads to monolingual overfitting and lexical bias, limiting generalization in cross-lingual IR (CLIR). To overcome these issues, we investigate instruction-tuning LLaMA-3.1-8B-Instruct on English and multilingual code-switched data, and evaluate on mMARCO and XQuAD-R. Results show that instruction-tuning on code-switched data substantially improves CLIR performance, while monolingual tuning remains more effective for monolingual reranking. We introduce a novel measure to analyze the relationship between lexical overlap and reranking performance, showing that the two factors are correlated. We finally conduct a causal analysis using counterfactual examples, where we evaluate whether rewriting passages that share overlapping keywords with the query causes models to change their relevance predictions. Overall, we find that code-switching serves as an effective and lightweight strategy to improve cross-lingual generalization in LLM-based re-ranking, while our analyses show that lexical overlap remains a major factor that can mislead reranking models."
 }
 
-@inproceedings{eckman-etal-2025-aligning,
-    title = "Aligning {NLP} Models with Target Population Perspectives using {PAIR}: Population-Aligned Instance Replication",
-    author = "Eckman, Stephanie  and
-      Ma, Bolei  and
-      Kern, Christoph  and
-      Chew, Rob  and
-      Plank, Barbara  and
-      Kreuter, Frauke",
-    editor = "Abercrombie, Gavin  and
-      Basile, Valerio  and
-      Frenda, Simona  and
-      Tonelli, Sara  and
-      Dudy, Shiran",
-    booktitle = "Proceedings of the The 4th Workshop on Perspectivist Approaches to NLP",
-    month = nov,
-    year = "2025",
-    address = "Suzhou, China",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2025.nlperspectives-1.9/",
-    doi = "10.18653/v1/2025.nlperspectives-1.9",
-    pages = "100--110",
-    ISBN = "979-8-89176-350-0",
-    abstract = "Models trained on crowdsourced annotations may not reflect population views, if those who work as annotators do not represent the broader population. In this paper, we propose PAIR: Population-Aligned Instance Replication, a post-processing method that adjusts training data to better reflect target population characteristics without collecting additional annotations. Using simulation studies on offensive language and hate speech detection with varying annotator compositions, we show that non-representative pools degrade model calibration while leaving accuracy largely unchanged. PAIR corrects these calibration problems by replicating annotations from underrepresented annotator groups to match population proportions. We conclude with recommendations for improving the representativity of training data and model performance."
-}
-
 @inproceedings{leonardelli-etal-2025-lewidi,
     title = "{L}e{W}i{D}i-2025 at {NLP}erspectives: Third Edition of the Learning with Disagreements Shared Task",
     author = "Leonardelli, Elisa  and
