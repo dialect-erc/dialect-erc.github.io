@@ -1452,7 +1452,7 @@
 }
 
 @inproceedings{bassignana-etal-2022-evidence,
-    title = "Evidence {\textgreater} Intuition: Transferability Estimation for Encoder Selection",
+    title = "Evidence {\ensuremath{>}} Intuition: Transferability Estimation for Encoder Selection",
     author = {Bassignana, Elisa  and
       M{\"u}ller-Eberstein, Max  and
       Zhang, Mike  and
@@ -1465,10 +1465,10 @@
     year = "2022",
     address = "Abu Dhabi, United Arab Emirates",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2022.emnlp-main.283",
+    url = "https://aclanthology.org/2022.emnlp-main.283/",
     doi = "10.18653/v1/2022.emnlp-main.283",
     pages = "4218--4227",
-    abstract = "With the increase in availability of large pre-trained language models (LMs) in Natural Language Processing (NLP), it becomes critical to assess their fit for a specific target task a priori{---}as fine-tuning the entire space of available LMs is computationally prohibitive and unsustainable. However, encoder transferability estimation has received little to no attention in NLP. In this paper, we propose to generate quantitative evidence to predict which LM, out of a pool of models, will perform best on a target task without having to fine-tune all candidates. We provide a comprehensive study on LM ranking for 10 NLP tasks spanning the two fundamental problem types of classification and structured prediction. We adopt the state-of-the-art Logarithm of Maximum Evidence (LogME) measure from Computer Vision (CV) and find that it positively correlates with final LM performance in 94{\%} of the setups. In the first study of its kind, we further compare transferability measures with the de facto standard of human practitioner ranking, finding that evidence from quantitative metrics is more robust than pure intuition and can help identify unexpected LM candidates.",
+    abstract = "With the increase in availability of large pre-trained language models (LMs) in Natural Language Processing (NLP), it becomes critical to assess their fit for a specific target task a priori{---}as fine-tuning the entire space of available LMs is computationally prohibitive and unsustainable. However, encoder transferability estimation has received little to no attention in NLP. In this paper, we propose to generate quantitative evidence to predict which LM, out of a pool of models, will perform best on a target task without having to fine-tune all candidates. We provide a comprehensive study on LM ranking for 10 NLP tasks spanning the two fundamental problem types of classification and structured prediction. We adopt the state-of-the-art Logarithm of Maximum Evidence (LogME) measure from Computer Vision (CV) and find that it positively correlates with final LM performance in 94{\%} of the setups.In the first study of its kind, we further compare transferability measures with the de facto standard of human practitioner ranking, finding that evidence from quantitative metrics is more robust than pure intuition and can help identify unexpected LM candidates."
 }
 
 @inproceedings{bassignana-plank-2022-crossre,
@@ -1621,22 +1621,38 @@
     abstract = "The labor market is changing rapidly, prompting increased interest in the automatic extraction of occupational skills from text. With the advent of English benchmark job description datasets, there is a need for systems that handle their diversity well. We tackle the complexity in occupational skill datasets tasks{---}combining and leveraging multiple datasets for skill extraction, to identify rarely observed skills within a dataset, and overcoming the scarcity of skills across datasets. In particular, we investigate the retrieval-augmentation of language models, employing an external datastore for retrieving similar skills in a dataset-unifying manner. Our proposed method, \textbf{N}earest \textbf{N}eighbor \textbf{O}ccupational \textbf{S}kill \textbf{E}xtraction (NNOSE) effectively leverages multiple datasets by retrieving neighboring skills from other datasets in the datastore. This improves skill extraction \textit{without} additional fine-tuning. Crucially, we observe a performance gain in predicting infrequent patterns, with substantial gains of up to 30{\%} span-F1 in cross-dataset settings.",
 }
 
-@misc{mondorf2024accuracyevaluatingreasoningbehavior,
-      title={Beyond Accuracy: Evaluating the Reasoning Behavior of Large Language Models -- A Survey}, 
-      author={Philipp Mondorf and Barbara Plank},
-      year={2024},
-      month= apr,
-      booktitle = "arXiv",
-      url={https://arxiv.org/abs/2404.01869}, 
+@inproceedings{
+mondorf2024beyond,
+title={Beyond Accuracy: Evaluating the Reasoning Behavior of Large Language Models - A Survey},
+author={Philipp Mondorf and Barbara Plank},
+booktitle={First Conference on Language Modeling},
+year={2024},
+url={https://openreview.net/forum?id=Lmjgl2n11u}
 }
 
-@article{liu2024gdtb,
-  title={GDTB: Genre Diverse Data for English Shallow Discourse Parsing across Modalities, Text Types, and Domains},
-  author={Liu, Yang Janet and Aoyama, Tatsuya and Scivetti, Wesley and Zhu, Yilun and Behzad, Shabnam and Levine, Lauren Elizabeth and Lin, Jessica and Tiwari, Devika and Zeldes, Amir},
-  year={2024},
-  month= Nov,
-  booktitle = "arXiv",
-  url={https://arxiv.org/abs/2411.00491}, 
+@inproceedings{liu-etal-2024-gdtb,
+    title = "{GDTB}: Genre Diverse Data for {E}nglish Shallow Discourse Parsing across Modalities, Text Types, and Domains",
+    author = "Liu, Yang Janet  and
+      Aoyama, Tatsuya  and
+      Scivetti, Wesley  and
+      Zhu, Yilun  and
+      Behzad, Shabnam  and
+      Levine, Lauren Elizabeth  and
+      Lin, Jessica  and
+      Tiwari, Devika  and
+      Zeldes, Amir",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.684/",
+    doi = "10.18653/v1/2024.emnlp-main.684",
+    pages = "12287--12303",
+    abstract = "Work on shallow discourse parsing in English has focused on the Wall Street Journal corpus, the only large-scale dataset for the language in the PDTB framework. However, the data is not openly available, is restricted to the news domain, and is by now 35 years old. In this paper, we present and evaluate a new open-access, multi-genre benchmark for PDTB-style shallow discourse parsing, based on the existing UD English GUM corpus, for which discourse relation annotations in other frameworks already exist. In a series of experiments on cross-domain relation classification, we show that while our dataset is compatible with PDTB, substantial out-of-domain degradation is observed, which can be alleviated by joint training on both datasets."
 }
 
 @inproceedings{zhou-etal-2024-mainlp,
@@ -1661,62 +1677,101 @@
     pages = "1842--1853",
 }
 
-@misc{wang2024looktextinstructiontunedlanguage,
-      title={Look at the Text: Instruction-Tuned Language Models are More Robust Multiple Choice Selectors than You Think}, 
-      author={Xinpeng Wang and Chengzhi Hu and Bolei Ma and Paul Röttger and Barbara Plank},
-      year={2024},
-      month = apr,
-      booktitle = "arXiv",
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2404.08382}, 
+@inproceedings{
+wang2024look,
+title={Look at the Text: Instruction-Tuned Language Models are More Robust Multiple Choice Selectors than You Think},
+author={Xinpeng Wang and Chengzhi Hu and Bolei Ma and Paul Rottger and Barbara Plank},
+booktitle={First Conference on Language Modeling},
+year={2024},
+url={https://openreview.net/forum?id=qHdSA85GyZ}
 }
 
-@article{mondorf2024circuit,
-  title={Circuit Compositions: Exploring Modular Structures in Transformer-Based Language Models},
-  author={Mondorf, Philipp and Wold, Sondre and Plank, Barbara},
-  booktitle = "arXiv",
-  year={2024},
-  month = Oct,
-  url={https://arxiv.org/abs/2410.01434},
+@inproceedings{mondorf-etal-2025-circuit,
+    title = "Circuit Compositions: Exploring Modular Structures in Transformer-Based Language Models",
+    author = "Mondorf, Philipp  and
+      Wold, Sondre  and
+      Plank, Barbara",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.727/",
+    doi = "10.18653/v1/2025.acl-long.727",
+    pages = "14934--14955",
+    ISBN = "979-8-89176-251-0",
+    abstract = "A fundamental question in interpretability research is to what extent neural networks, particularly language models, implement reusable functions through subnetworks that can be composed to perform more complex tasks. Recent advances in mechanistic interpretability have made progress in identifying circuits, the minimal computational subgraphs responsible for a model{'}s behavior on specific tasks. However, most studies focus on identifying circuits for individual tasks without investigating how functionally similar circuits relate to each other. To address this gap, we study the modularity of neural networks by analyzing circuits for highly compositional subtasks within a transformer-based language model. Specifically, given a probabilistic context-free grammar, we identify and compare circuits responsible for ten modular string-edit operations. Our results indicate that functionally similar circuits exhibit both notable node overlap and cross-task faithfulness. Moreover, we demonstrate that the circuits identified can be reused and combined through set operations to represent more complex functional model capabilities."
 }
 
-@article{wang2024surgical,
-  title={Surgical, Cheap, and Flexible: Mitigating False Refusal in Language Models via Single Vector Ablation},
-  author={Wang, Xinpeng and Hu, Chengzhi and R{\"o}ttger, Paul and Plank, Barbara},
-  booktitle = "arXiv",
-  year={2024},
-  month = Oct,
-  url={https://arxiv.org/abs/2410.03415},
+@inproceedings{
+wang2025surgical,
+title={Surgical, Cheap, and Flexible: Mitigating False Refusal in Language Models via Single Vector Ablation},
+author={Xinpeng Wang and Chengzhi Hu and Paul R{\"o}ttger and Barbara Plank},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=SCBn8MCLwc}
 }
 
-@article{shim2024dialetto,
-  title={Dialetto, ma Quanto Dialetto? Transcribing and Evaluating Dialects on a Continuum},
-  author={Shim, Ryan Soh-Eun and Plank, Barbara},
-  booktitle = "arXiv",
-  year={2024},
-  month = Oct,
-  url={https://arxiv.org/abs/2410.14589},
+@inproceedings{shim-plank-2025-dialetto,
+    title = "Dialetto, ma Quanto Dialetto? Transcribing and Evaluating Dialects on a Continuum",
+    author = "Shim, Ryan Soh-Eun  and
+      Plank, Barbara",
+    editor = "Chiruzzo, Luis  and
+      Ritter, Alan  and
+      Wang, Lu",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2025",
+    month = apr,
+    year = "2025",
+    address = "Albuquerque, New Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-naacl.48/",
+    doi = "10.18653/v1/2025.findings-naacl.48",
+    pages = "838--849",
+    ISBN = "979-8-89176-195-7",
+    abstract = "There is increasing interest in looking at dialects in NLP. However, most work to date still treats dialects as discrete categories. For instance, evaluative work in variation-oriented NLP for English often works with Indian English or African-American Venacular English as homogeneous categories, yet even within one variety there is substantial variation. We examine within-dialect variation and show that performance critically varies within categories. We measure speech-to-text performance on Italian dialects, and empirically observe a geographical performance disparity. This disparity correlates substantially (-0.5) with linguistic similarity to the highest performing dialect variety. We cross-examine our results against dialectometry methods, and interpret the performance disparity to be due to a bias towards dialects that are more similar to the standard variety in the speech-to-text model examined. We additionally leverage geostatistical methods to predict zero-shot performance at unseen sites, and find the incorporation of geographical information to substantially improve prediction performance, indicating there to be geographical structure in the performance distribution."
 }
 
-@article{chen2024understanding,
-  title={Understanding When Tree of Thoughts Succeeds: Larger Models Excel in Generation, Not Discrimination},
-  author={Chen, Qiqi and Wang, Xinpeng and Mondorf, Philipp and Hedderich, Michael A and Plank, Barbara},
-  booktitle = "arXiv",
-  year={2024},
-  month = Oct,
-  url={https://arxiv.org/abs/2410.17820},
+@inproceedings{bavaresco-etal-2025-llms,
+    title = "{LLM}s instead of Human Judges? A Large Scale Empirical Study across 20 {NLP} Evaluation Tasks",
+    author = "Bavaresco, Anna  and
+      Bernardi, Raffaella  and
+      Bertolazzi, Leonardo  and
+      Elliott, Desmond  and
+      Fern{\'a}ndez, Raquel  and
+      Gatt, Albert  and
+      Ghaleb, Esam  and
+      Giulianelli, Mario  and
+      Hanna, Michael  and
+      Koller, Alexander  and
+      Martins, Andre  and
+      Mondorf, Philipp  and
+      Neplenbroek, Vera  and
+      Pezzelle, Sandro  and
+      Plank, Barbara  and
+      Schlangen, David  and
+      Suglia, Alessandro  and
+      Surikuchi, Aditya K  and
+      Takmaz, Ece  and
+      Testoni, Alberto",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-short.20/",
+    doi = "10.18653/v1/2025.acl-short.20",
+    pages = "238--255",
+    ISBN = "979-8-89176-252-7",
+    abstract = "There is an increasing trend towards evaluating NLP models with LLMs instead of human judgments, raising questions about the validity of these evaluations, as well as their reproducibility in the case of proprietary models. We provide JUDGE-BENCH, an extensible collection of 20 NLP datasets with human annotations covering a broad range of evaluated properties and types of data, and comprehensively evaluate 11 current LLMs, covering both open-weight and proprietary models, for their ability to replicate the annotations. Our evaluations show substantial variance across models and datasets. Models are reliable evaluators on some tasks, but overall display substantial variability depending on the property being evaluated, the expertise level of the human judges, and whether the language is human or model-generated. We conclude that LLMs should be carefully validated against human judgments before being used as evaluators."
 }
-
-@article{bavaresco2024llms,
-  title={Llms instead of human judges? a large scale empirical study across 20 nlp evaluation tasks},
-  author={Bavaresco, Anna and Bernardi, Raffaella and Bertolazzi, Leonardo and Elliott, Desmond and Fern{\'a}ndez, Raquel and Gatt, Albert and Ghaleb, Esam and Giulianelli, Mario and Hanna, Michael and Koller, Alexander and others},
-  booktitle = "arXiv",
-  year={2024},
-  month = Jun,
-  url={https://arxiv.org/abs/2406.18403},
-}
-
 @inproceedings{wang-etal-2024-answer-c,
     title = "{``}My Answer is {C}{''}: First-Token Probabilities Do Not Match Text Answers in Instruction-Tuned Language Models",
     author = {Wang, Xinpeng  and
