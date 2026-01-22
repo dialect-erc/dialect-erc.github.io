@@ -67,13 +67,10 @@ document.addEventListener('DOMContentLoaded', function() {
 -->
 
 
-<h2 class="text-2xl text-secondary-600 font-semibold pb-12">All Publications</h2>
-<!-- styling for bibliography is done in _layouts/bib.html -->
-<!-- to add publications, edit the _bibliography/papers.bib file-->
-<div id="publication-container">
-  {% bibliography --template bib %}
+<h2 class="text-2xl text-secondary-600 font-semibold pb-12">Preprints</h2>
+<div id="preprint-container" class="pb-24">
+  {% bibliography --file preprints --template bib %}
 </div>
-
 
 
 <!-- "Show More" button -->
