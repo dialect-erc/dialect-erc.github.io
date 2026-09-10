@@ -1003,6 +1003,8 @@ video {
   height: 28rem;
 }.h-44 {
   height: 11rem;
+}.max-h-96 {
+  max-height: 24rem;
 }.w-full {
   width: 100%;
 }.w-8\/12 {
@@ -1025,6 +1027,8 @@ video {
   max-width: 65ch;
 }.max-w-screen-lg {
   max-width: 1024px;
+}.max-w-full {
+  max-width: 100%;
 }.max-w-sm {
   max-width: 24rem;
 }.max-w-xl {
