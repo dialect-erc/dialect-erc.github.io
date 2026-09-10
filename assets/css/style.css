@@ -37,6 +37,43 @@
         }
         gap: 12px;
 }
+
+/* Keep the visible ERC and EU marks balanced against the page edges. */
+.footer-funding-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+}
+
+.footer-funding-logos__erc {
+  width: min(27%, 327px);
+  aspect-ratio: 375 / 440;
+  background: url('/assets/img/erc-eu-funding-logos-v2.png') 5.31% top / auto 100% no-repeat;
+}
+
+.footer-funding-logos__eu {
+  width: min(68%, 831px);
+  aspect-ratio: 953 / 440;
+  background: url('/assets/img/erc-eu-funding-logos-v2.png') 91.24% top / auto 100% no-repeat;
+}
+
+@media (max-width: 639px) {
+  .footer-funding-logos {
+    flex-direction: column;
+  }
+
+  .footer-funding-logos__erc {
+    width: min(80%, 327px);
+  }
+
+  .footer-funding-logos__eu {
+    width: min(100%, 831px);
+  }
+}
+
 .highlight .hll { background-color: #515151 }
 .highlight  { background: #2d2d2d; color: #f2f0ec }
 .highlight .c { color: #A3CACD } /* Comment */
