@@ -24,6 +24,8 @@ layout: default
           <p class="text-left text-sm text-mainText">{{ entry.journal }}</p>
         {% elsif entry.booktitle %}
           <p class="text-left text-sm text-mainText">{{ entry.booktitle }}</p>
+        {% elsif entry.eprint %}
+          <p class="text-left text-sm text-mainText">arXiv preprint arXiv:{{ entry.eprint }}</p>
         {% endif %}
 
         <!-- Insert link to publication if URL exists-->
