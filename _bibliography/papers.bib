@@ -1,5 +1,255 @@
 ---
 ---
+@inproceedings{chen-etal-2026-decoupling,
+    title = "Decoupling the Effect of Chain-of-Thought Reasoning: A Human Label Variation Perspective",
+    author = "Chen, Beiduo  and
+      Hu, Tiancheng  and
+      Zhang, Caiqi  and
+      Litschko, Robert  and
+      Korhonen, Anna  and
+      Plank, Barbara",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.1103/",
+    doi = "10.18653/v1/2026.findings-acl.1103",
+    pages = "21931--21951",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Reasoning-tuned LLMs utilizing long Chain-of-Thought (CoT) excel at single-answer tasks, yet their ability to model Human Label Variation{---}which requires capturing probabilistic ambiguity rather than resolving it{---}remains underexplored. We investigate this through systematic disentanglement experiments on distribution-based tasks, employing Cross-CoT experiments to isolate the effect of reasoning text from intrinsic model priors. We observe a distinct ``decoupled mechanism'': while CoT improves distributional alignment, final accuracy is dictated by CoT content (99{\%} variance contribution), whereas distributional ranking is governed by model priors (over 80{\%}). Step-wise analysis further shows that while CoT{'}s influence on accuracy grows monotonically during the reasoning process, distributional structure is largely determined by LLM{'}s intrinsic priors. These findings suggest that long CoT serves as a decisive LLM decision-maker for the top option but fails to function as a granular distribution calibrator for ambiguous tasks."
+}
+
+@inproceedings{blaschke-etal-2026-standard,
+    title = "Standard-to-Dialect Transfer Trends Differ across Text and Speech: A Case Study on Intent and Topic Classification in {G}erman Dialects",
+    author = "Blaschke, Verena  and
+      Winkler, Miriam  and
+      Plank, Barbara",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-long.309/",
+    doi = "10.18653/v1/2026.acl-long.309",
+    pages = "6807--6829",
+    ISBN = "979-8-89176-390-6",
+    abstract = "Research on cross-dialectal transfer from a standard to a non-standard dialect variety has typically focused on text data. However, dialects are primarily spoken, and non-standard spellings cause issues in text processing. We compare standard-to-dialect transfer in three settings: text models, speech models, and cascaded systems where speech first gets automatically transcribed and then further processed by a text model. We focus on German dialects in the context of written and spoken intent classification {--} releasing the first dialectal audio intent classification dataset {--} with supporting experiments on topic classification. The speech-only setup provides the best results on the dialect data while the text-only setup works best on the standard data. While the cascaded systems lag behind the text-only models for German, they perform relatively well on the dialectal data if the transcription system generates normalized, standard-like output."
+}
+
+@inproceedings{hong-etal-2026-agree,
+    title = "Agree, Disagree, Explain: Decomposing Human Label Variation in {NLI} through the Lens of Explanations",
+    author = "Hong, Pingjun  and
+      Chen, Beiduo  and
+      Peng, Siyao  and
+      de Marneffe, Marie-Catherine  and
+      Roth, Benjamin  and
+      Plank, Barbara",
+    editor = "Liakata, Maria  and
+      Moreira, Viviane P.  and
+      Zhang, Jiajun  and
+      Jurgens, David",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-acl.1342/",
+    doi = "10.18653/v1/2026.findings-acl.1342",
+    pages = "26922--26934",
+    ISBN = "979-8-89176-395-1",
+    abstract = "Natural Language Inference (NLI) datasets often exhibit human label variation. To better understand these variations, explanation-based approaches analyze the underlying reasoning behind annotators' decisions. One such approach is the LiTEx taxonomy, which categorizes free-text explanations in English into reasoning categories. However, previous work applying LiTEx has focused on within-label variation: cases where annotators agree on the NLI label but provide different explanations. This paper broadens the scope by examining how annotators may diverge not only in the reasoning category but also in the labeling. We use explanations as a lens to analyze variation in NLI annotations and to examine individual differences in reasoning. We apply LiTEx to two NLI datasets and align annotation variation from multiple aspects: NLI label agreement, explanation similarity, and taxonomy agreement, with an additional compounding factor of annotators' selection bias. We observe instances where annotators disagree on the label but provide similar explanations, suggesting that surface-level disagreement may mask underlying agreement in interpretation. Moreover, our analysis reveals individual preferences in explanation strategies and label choices. These findings highlight that agreement in reasoning categories better reflects the semantic similarity of explanations than label agreement alone. Our findings underscore the richness of reasoning-based explanations and the need for caution in treating labels as ground truth."
+}
+
+@inproceedings{
+eichin2026explaind,
+title={Ex{PLAIND}: Unifying Model, Data, and Training Attribution to Study Model Behavior},
+author={Florian Eichin and Yupei Du and Philipp Mondorf and Maria Matveev and Barbara Plank and Michael A. Hedderich},
+booktitle={Forty-third International Conference on Machine Learning},
+year={2026},
+url={https://openreview.net/forum?id=7G6x9QTaN4}
+}
+
+@inproceedings{
+wang2026is,
+title={Is it Thinking or Cheating?  Detecting Implicit Reward Hacking by Measuring Reasoning Effort},
+author={Xinpeng Wang and Nitish Joshi and Barbara Plank and Rico Angell and He He},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+url={https://openreview.net/forum?id=Gk7gLAtVDO}
+}
+
+@inproceedings{
+mondorf2026compositionalarc,
+title={Compositional-{ARC}: Assessing Systematic Generalization in Abstract Spatial Reasoning},
+author={Philipp Mondorf and Shijia Zhou and Monica Riedler and Barbara Plank},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+url={https://openreview.net/forum?id=h497VpgFKd}
+}
+
+@inproceedings{wang-etal-2026-bi,
+    title = "Bi-Text Mining across {G}erman Dialects: On the Role of Synthetic Training Data for Dialect Adaptation",
+    author = "Wang, Jing  and
+      Plank, Barbara  and
+      Litschko, Robert",
+    editor = "Rapp, Reinhard  and
+      Terryn, Ayla Rigouts  and
+      Sharoff, Serge  and
+      Zweigenbaum, Pierre",
+    booktitle = "Proceedings of the 19th Workshop on Building and Using Comparable Corpora ({BUCC})",
+    month = may,
+    year = "2026",
+    address = "Palma de Mallorca, Spain",
+    publisher = "ELRA Language Resources Association (ELRA)",
+    url = "https://aclanthology.org/2026.bucc-1.9/",
+    doi = "10.63317/3gmqhegz45cn",
+    pages = "72--83",
+    abstract = "Cross-dialect bi-text mining relies on robust multilingual sentence representations to identify semantically equivalent sentence pairs across languages. While recent multilingual bi-encoder models achieve strong performance on standardized written languages, their behavior on dialectal varieties is largely unknown. In this study, we use Tatoeba to evaluate the performance of four widely-used bi-encoders on dialect-to-standard German translation retrieval, covering German documents and queries written in three dialects: Low German, Bavarian, and Alemannic. Motivated by the lack of resources, we examine the extent to which synthetic translations (from dictionaries and large language models; LLMs) can serve as weak supervision for dialect adaptation. Our results reveal that bi-encoders, when applied in a zero-shot setting, exhibit deficiencies in capturing semantic similarity between German and dialects, while fine-tuning on synthetic data substantially improves their retrieval effectiveness, with larger gains obtained from LLM-translated training data. We further analyze retrieval performance on Bavarian across varying dialect word proportions and observe a drop when dialect words make up more than 60{\%} of the text."
+}
+
+@inproceedings{lutgen-etal-2026-variation,
+    title = "Variation Is the Norm: Embracing Sociolinguistics in {NLP}",
+    author = "Lutgen, Anne-Marie  and
+      Plum, Alistair  and
+      Blaschke, Verena  and
+      Plank, Barbara  and
+      Purschke, Christoph",
+    editor = "Piperidis, Stelios  and
+      Bel, N{\'u}ria  and
+      van den Heuvel, Henk  and
+      Ide, Nancy  and
+      Krek, Simon  and
+      Toral, Antonio",
+    booktitle = "Proceedings of the Fifteenth Language Resources and Evaluation Conference",
+    month = may,
+    year = "2026",
+    address = "Palma de Mallorca, Spain",
+    publisher = "ELRA Language Resource Association",
+    url = "https://aclanthology.org/2026.lrec-1.886/",
+    doi = "10.63317/3v3vhacxgfex",
+    pages = "11332--11344",
+    abstract = "In Natural Language Processing (NLP), variation is typically seen as noise and ``normalised away'' before processing, even though it is an integral part of language. Conversely, studying language variation in social contexts is central to sociolinguistics. We present a framework to combine the sociolinguistic dimension of language with the technical dimension of NLP. We argue that by embracing sociolinguistics, variation can actively be included in a research setup, in turn informing the NLP side. To illustrate this, we provide a case study on Luxembourgish, an evolving language featuring a large amount of orthographic variation, demonstrating how NLP performance is impacted. The results show large discrepancies in the performance of models tested and fine-tuned on data with a large amount of orthographic variation in comparison to data closer to the (orthographic) standard. Furthermore, we provide a possible solution to improve the performance by including variation in the fine-tuning process. This case study highlights the importance of including variation in the research setup, as models are currently not robust to occurring variation. Our framework facilitates the inclusion of variation in the thought-process while also being grounded in the theoretical framework of sociolinguistics."
+}
+
+@inproceedings{pei-etal-2026-information,
+    title = "Information Asymmetry across Language Varieties: A Case Study on {C}antonese-{M}andarin and {B}avarian-{G}erman {QA}",
+    author = "Pei, Renhao  and
+      Peng, Siyao  and
+      Blaschke, Verena  and
+      Litschko, Robert  and
+      Plank, Barbara",
+    editor = "Piperidis, Stelios  and
+      Bel, N{\'u}ria  and
+      van den Heuvel, Henk  and
+      Ide, Nancy  and
+      Krek, Simon  and
+      Toral, Antonio",
+    booktitle = "Proceedings of the Fifteenth Language Resources and Evaluation Conference",
+    month = may,
+    year = "2026",
+    address = "Palma de Mallorca, Spain",
+    publisher = "ELRA Language Resource Association",
+    url = "https://aclanthology.org/2026.lrec-1.100/",
+    doi = "10.63317/3m35a6d3v5w7",
+    pages = "1280--1302",
+    abstract = "Large Language Models (LLMs) are becoming a common way for humans to seek knowledge, yet their coverage and reliability vary widely. Especially for local language varieties, there are large asymmetries, e.g., information in local Wikipedia that is absent from the standard variant. However, little is known about how well LLMs perform under such information asymmetry, especially on closely related languages. We manually construct a novel challenge question-answering (QA) dataset that captures knowledge conveyed on a local Wikipedia page, which is absent from their higher-resource counterparts {---} covering Mandarin Chinese vs. Cantonese and German vs. Bavarian. Our experiments show that LLMs fail to answer questions about information only in local editions of Wikipedia. Providing context from lead sections substantially improves performance, with further gains possible via translation. Our topical, geographic annotations, and stratified evaluations reveal the usefulness of local Wikipedia editions as sources of both regional and global information. These findings raise critical questions about inclusivity and cultural coverage of LLMs."
+}
+
+
+@inproceedings{ma-etal-2026-open,
+    title = "Too Open for Opinion? Embracing Open-Endedness in Large Language Models for Social Simulation",
+    author = "Ma, Bolei  and
+      Cao, Yong  and
+      Sen, Indira  and
+      Haensch, Anna-Carolina  and
+      Kreuter, Frauke  and
+      Plank, Barbara  and
+      Hershcovich, Daniel",
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-long.89/",
+    doi = "10.18653/v1/2026.eacl-long.89",
+    pages = "1998--2016",
+    ISBN = "979-8-89176-380-7",
+    abstract = "Large Language Models (LLMs) are increasingly used to simulate public opinion and other social phenomena. Most current studies constrain these simulations to multiple-choice or short-answer formats for ease of scoring and comparison, but such closed designs overlook the inherently generative nature of LLMs. In this position paper, we argue that open-endedness, using free-form text that captures topics, viewpoints, and reasoning processes ``in'' LLMs, is essential for realistic social simulation. Drawing on decades of survey methodology research and recent advances in NLP, we argue why this open-endedness is valuable in LLM social simulations, showing how it can improve measurement and design, support exploration of unanticipated views, and reduce researcher-imposed directive bias. It also captures expressiveness and individuality, aids in pretesting, and ultimately enhances methodological utility. We call for novel practices and evaluation frameworks that leverage rather than constrain the open-ended generative diversity of LLMs, creating synergies between NLP and social science."
+}
+
+@inproceedings{orth-etal-2026-probable,
+    title = "If Probable, Then Acceptable? Understanding Conditional Acceptability Judgments in Large Language Models",
+    author = "Orth, Jasmin  and
+      Mondorf, Philipp  and
+      Plank, Barbara",
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-long.18/",
+    doi = "10.18653/v1/2026.eacl-long.18",
+    pages = "405--427",
+    ISBN = "979-8-89176-380-7",
+    abstract = "Conditional acceptability refers to how plausible a conditional statement is perceived to be. It plays an important role in communication and reasoning, as it influences how individuals interpret implications, assess arguments, and make decisions based on hypothetical scenarios. When humans evaluate how acceptable a conditional ``If A, then B'' is, their judgments are influenced by two main factors: the $\textit{conditional probability}$ of $B$ given $A$, and the $\textit{semantic relevance}$ of the antecedent $A$ given the consequent $B$ (i.e., whether $A$ meaningfully supports $B$). While prior work has examined how large language models (LLMs) draw inferences about conditional statements, it remains unclear how these models judge the $\textit{acceptability}$ of such statements. To address this gap, we present a comprehensive study of LLMs' conditional acceptability judgments across different model families, sizes, and prompting strategies. Using linear mixed-effects models and ANOVA tests, we find that models are sensitive to both conditional probability and semantic relevance$\textemdash{}$though to varying degrees depending on architecture and prompting style. A comparison with human data reveals that while LLMs incorporate probabilistic and semantic cues, they do so less consistently than humans. Notably, larger models do not necessarily align more closely with human judgments."
+}
+
+@inproceedings{sauberli-etal-2026-controlling,
+    title = "Controlling Reading Ease with Gaze-Guided Text Generation",
+    author = {S{\"a}uberli, Andreas  and
+      Jepifanova, Darja  and
+      Frassinelli, Diego  and
+      Plank, Barbara},
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-long.107/",
+    doi = "10.18653/v1/2026.eacl-long.107",
+    pages = "2383--2397",
+    ISBN = "979-8-89176-380-7",
+    abstract = "The way our eyes move while reading can tell us about the cognitive effort required to process the text. In the present study, we use this fact to generate texts with controllable reading ease. Our method employs a model that predicts human gaze patterns to steer language model outputs towards eliciting certain reading behaviors. We evaluate the approach in an eye-tracking experiment with native and non-native speakers of English. The results demonstrate that the method is effective at making the generated texts easier or harder to read, measured both in terms of reading times and perceived difficulty of the texts. A statistical analysis reveals that the changes in reading behavior are mostly due to features that affect lexical processing. Possible applications of our approach include text simplification for information accessibility and generation of personalized educational material for language learning."
+}
+
+@inproceedings{korner-etal-2026-meanings,
+    title = "When Meanings Meet: Investigating the Emergence and Quality of Shared Concept Spaces during Multilingual Language Model Training",
+    author = {K{\"o}rner, Felicia  and
+      M{\"u}ller-Eberstein, Max  and
+      Korhonen, Anna  and
+      Plank, Barbara},
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-long.145/",
+    doi = "10.18653/v1/2026.eacl-long.145",
+    pages = "3149--3169",
+    ISBN = "979-8-89176-380-7",
+    abstract = "Training Large Language Models (LLMs) with high multilingual coverage is becoming increasingly important {---} especially when monolingual resources are scarce. Recent studies have found that LLMs process multilingual inputs in shared concept spaces, thought to support generalization and cross-lingual transfer. However, these prior studies often do not use causal methods, lack deeper error analysis or focus on the final model only, leaving open how these spaces emerge \textit{during training}. We investigate the development of language-agnostic concept spaces during pretraining of EuroLLM through the causal interpretability method of activation patching. We isolate cross-lingual concept representations, then inject them into a translation prompt to investigate how consistently translations can be altered, independently of the language. We find that \textit{shared concept spaces emerge early and continue to refine}, but that \textit{alignment with them is language-dependent}. Furthermore, in contrast to prior work, our fine-grained manual analysis reveals that some apparent gains in translation quality reflect shifts in behavior {---} like selecting senses for polysemous words or translating instead of copying cross-lingual homographs {---} rather than improved translation ability. Our findings offer new insight into the training dynamics of cross-lingual alignment and the conditions under which causal interpretability methods offer meaningful insights in multilingual contexts."
+}
 
 @inproceedings{testoni-etal-2025-racquet,
     title = "{RA}c{QUE}t: Unveiling the Dangers of Overlooked Referential Ambiguity in Visual {LLM}s",
