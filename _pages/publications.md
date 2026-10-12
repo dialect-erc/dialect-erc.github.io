@@ -91,9 +91,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // All Publications
-  setupShowMore('publication-container', 'show-more-btn', 10);
+  setupShowMore('publication-container', 'show-more-btn', 5);
 
   // Preprints
-  setupShowMore('preprint-container', 'show-more-preprints-btn', 10);
+  setupShowMore('preprint-container', 'show-more-preprints-btn', 5);
 });
 </script>
